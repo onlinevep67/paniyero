@@ -16,3 +16,4 @@ export '/pages/scan/scan_widget.dart' show ScanWidget;
 export '/tester/tester_widget.dart' show TesterWidget;
 export '/pages/homepage/homepage_widget.dart' show HomepageWidget;
 export '/pages/transactions/transactions_widget.dart' show TransactionsWidget;
+export '/profile/profile_widget.dart' show ProfileWidget;

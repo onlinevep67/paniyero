@@ -1000,40 +1000,6 @@ class _Auth3CreateWidgetState extends State<Auth3CreateWidget>
                                         color: FlutterFlowTheme.of(context)
                                             .alternate,
                                       ),
-
-                                      // You will have to add an action on this rich text to go to your login page.
-                                      Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
-                                            0.0, 12.0, 0.0, 12.0),
-                                        child: RichText(
-                                          textScaler:
-                                              MediaQuery.of(context).textScaler,
-                                          text: TextSpan(
-                                            children: [
-                                              TextSpan(
-                                                text: 'Additional options:',
-                                                style: TextStyle(),
-                                              )
-                                            ],
-                                            style: FlutterFlowTheme.of(context)
-                                                .labelLarge
-                                                .override(
-                                                  fontFamily:
-                                                      FlutterFlowTheme.of(
-                                                              context)
-                                                          .labelLargeFamily,
-                                                  fontSize: 14.0,
-                                                  letterSpacing: 0.0,
-                                                  useGoogleFonts: GoogleFonts
-                                                          .asMap()
-                                                      .containsKey(
-                                                          FlutterFlowTheme.of(
-                                                                  context)
-                                                              .labelLargeFamily),
-                                                ),
-                                          ),
-                                        ),
-                                      ),
                                       Align(
                                         alignment:
                                             AlignmentDirectional(-1.0, -1.0),

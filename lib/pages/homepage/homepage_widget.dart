@@ -754,11 +754,14 @@ class _HomepageWidgetState extends State<HomepageWidget>
                                       ),
                                     ].divide(SizedBox(height: 4.0)),
                                   ),
-                                  Image.network(
-                                    'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=80&h=80',
-                                    width: 80.0,
-                                    height: 80.0,
-                                    fit: BoxFit.cover,
+                                  ClipRRect(
+                                    borderRadius: BorderRadius.circular(6.0),
+                                    child: Image.network(
+                                      'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=80&h=80',
+                                      width: 80.0,
+                                      height: 80.0,
+                                      fit: BoxFit.cover,
+                                    ),
                                   ),
                                 ].divide(SizedBox(width: 8.0)),
                               ),
