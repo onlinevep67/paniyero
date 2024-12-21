@@ -54,9 +54,10 @@ class _HomepageWidgetState extends State<HomepageWidget> {
             child: FlutterFlowWebView(
               content: 'https://wrmwux4q7midprpo.vercel.app/',
               bypass: false,
+              width: MediaQuery.sizeOf(context).width * 1.0,
               height: MediaQuery.sizeOf(context).height * 1.0,
               verticalScroll: true,
-              horizontalScroll: false,
+              horizontalScroll: true,
             ),
           ),
         ),

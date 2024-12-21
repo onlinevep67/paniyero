@@ -341,14 +341,14 @@ class FFRoute {
                 )
               : builder(context, ffParams);
           final child = appStateNotifier.loading
-              ? Center(
-                  child: SizedBox(
-                    width: 50.0,
-                    height: 50.0,
-                    child: CircularProgressIndicator(
-                      valueColor: AlwaysStoppedAnimation<Color>(
-                        Color(0xFFAD6546),
-                      ),
+              ? Container(
+                  color: FlutterFlowTheme.of(context).primaryText,
+                  child: Center(
+                    child: Image.asset(
+                      'assets/images/panyero.gif',
+                      width: 300.0,
+                      height: 300.0,
+                      fit: BoxFit.cover,
                     ),
                   ),
                 )
