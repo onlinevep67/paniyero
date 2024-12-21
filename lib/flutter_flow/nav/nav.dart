@@ -157,6 +157,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           path: '/scan',
           builder: (context, params) =>
               params.isEmpty ? NavBarPage(initialPage: 'Scan') : ScanWidget(),
+        ),
+        FFRoute(
+          name: 'Tester',
+          path: '/tester',
+          builder: (context, params) => TesterWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

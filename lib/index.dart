@@ -13,3 +13,4 @@ export '/pages/finance/finance_widget.dart' show FinanceWidget;
 export '/pages/services/services_widget.dart' show ServicesWidget;
 export '/pages/user/user_widget.dart' show UserWidget;
 export '/pages/scan/scan_widget.dart' show ScanWidget;
+export '/tester/tester_widget.dart' show TesterWidget;

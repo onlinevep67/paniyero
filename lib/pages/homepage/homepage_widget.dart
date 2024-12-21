@@ -43,16 +43,16 @@ class _HomepageWidgetState extends State<HomepageWidget> {
       child: Scaffold(
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        body: Container(
-          width: MediaQuery.sizeOf(context).width * 1.0,
-          height: MediaQuery.sizeOf(context).height * 1.0,
-          decoration: BoxDecoration(
-            color: FlutterFlowTheme.of(context).secondaryBackground,
-          ),
-          child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 45.0, 0.0, 0.0),
+        body: SafeArea(
+          top: true,
+          child: Container(
+            width: MediaQuery.sizeOf(context).width * 1.0,
+            height: MediaQuery.sizeOf(context).height * 1.0,
+            decoration: BoxDecoration(
+              color: FlutterFlowTheme.of(context).primaryBackground,
+            ),
             child: FlutterFlowWebView(
-              content: 'https://v0-panyero-t68mh4fvh9k.vercel.app/',
+              content: 'https://odqc7a4zfrqj1plb.vercel.app/',
               bypass: false,
               width: MediaQuery.sizeOf(context).width * 1.0,
               height: MediaQuery.sizeOf(context).height * 1.0,

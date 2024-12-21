@@ -54,7 +54,10 @@
 	<true/>
 
 
-
+	<key>NSCameraUsageDescription</key>
+    <string>In order to scan a QR code, This app requires Camera Permission</string>
+	<key>NSMicrophoneUsageDescription</key>
+    <string>In order to create recording with voice assistant, This app requires microphone permission.</string>
 
 
 	<key>UILaunchStoryboardName</key>

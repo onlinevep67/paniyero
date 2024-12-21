@@ -1,5 +1,6 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
+import '/flutter_flow/flutter_flow_web_view.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -48,6 +49,14 @@ class _UserWidgetState extends State<UserWidget> {
           height: MediaQuery.sizeOf(context).height * 1.0,
           decoration: BoxDecoration(
             color: FlutterFlowTheme.of(context).secondaryBackground,
+          ),
+          child: FlutterFlowWebView(
+            content: 'https://odqc7a4zfrqj1plb.vercel.app/profile',
+            bypass: false,
+            width: MediaQuery.sizeOf(context).width * 1.0,
+            height: MediaQuery.sizeOf(context).height * 1.0,
+            verticalScroll: false,
+            horizontalScroll: false,
           ),
         ),
       ),
