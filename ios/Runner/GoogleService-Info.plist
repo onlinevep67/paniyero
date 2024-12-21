@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>115929057422-02qom1a6bv3favibvub2dhmpip2u5c24.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.115929057422-02qom1a6bv3favibvub2dhmpip2u5c24</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>115929057422-v1pv36mup3jqsa0b8jcv3arqsd3pucj7.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCRHMOw9PZdx0kQfNiCKCmEtDos8qukV4U</string>
+	<key>GCM_SENDER_ID</key>
+	<string>115929057422</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.mypanyerowallet.app</string>
+	<key>PROJECT_ID</key>
+	<string>panyero-v5-1u81xf</string>
+	<key>STORAGE_BUCKET</key>
+	<string>panyero-v5-1u81xf.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:115929057422:ios:039c8c5cf4e1982953e1df</string>
+	<key>DATABASE_URL</key>
+	<string>https://panyero-v5-1u81xf-default-rtdb.asia-southeast1.firebasedatabase.app</string>
+</dict>
+</plist>
