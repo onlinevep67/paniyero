@@ -52,7 +52,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
           child: Padding(
             padding: EdgeInsetsDirectional.fromSTEB(0.0, 45.0, 0.0, 0.0),
             child: FlutterFlowWebView(
-              content: 'https://wrmwux4q7midprpo.vercel.app/',
+              content: 'https://v0-panyero-t68mh4fvh9k.vercel.app/',
               bypass: false,
               width: MediaQuery.sizeOf(context).width * 1.0,
               height: MediaQuery.sizeOf(context).height * 1.0,
