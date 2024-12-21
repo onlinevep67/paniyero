@@ -5,7 +5,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Panyero-v5</string>
+	<string>Panyero</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>Panyero-v5</string>
+	<string>Panyero</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 
@@ -37,10 +37,10 @@
         <key>CFBundleTypeRole</key>
         <string>Editor</string>
         <key>CFBundleURLName</key>
-        <string>panyerov5.com</string>
+        <string>panyero.com</string>
         <key>CFBundleURLSchemes</key>
         <array>
-        <string>panyerov5</string>
+        <string>panyero</string>
         </array>
         </dict>
     </array>
@@ -53,9 +53,8 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 
-
 	<key>NSCameraUsageDescription</key>
-    <string>In order to scan a QR code, This app requires Camera Permission</string>
+    <string>In order to scan for barcodes and QR codes, this app requires permission to access the camera.</string>
 	<key>NSMicrophoneUsageDescription</key>
     <string>In order to create recording with voice assistant, This app requires microphone permission.</string>
 

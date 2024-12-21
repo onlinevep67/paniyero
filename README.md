@@ -1,4 +1,4 @@
-# Panyero-v5
+# Panyero
 
 A new Flutter project.
 

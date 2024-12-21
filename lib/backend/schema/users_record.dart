@@ -91,6 +91,16 @@ class UsersRecord extends FirestoreRecord {
   int get rewards => _rewards ?? 0;
   bool hasRewards() => _rewards != null;
 
+  // "notifcount" field.
+  int? _notifcount;
+  int get notifcount => _notifcount ?? 0;
+  bool hasNotifcount() => _notifcount != null;
+
+  // "qrcode" field.
+  String? _qrcode;
+  String get qrcode => _qrcode ?? '';
+  bool hasQrcode() => _qrcode != null;
+
   void _initializeFields() {
     _email = snapshotData['email'] as String?;
     _displayName = snapshotData['display_name'] as String?;
@@ -107,6 +117,8 @@ class UsersRecord extends FirestoreRecord {
     _walletBallance = castToType<int>(snapshotData['walletBallance']);
     _tokenBalance = castToType<int>(snapshotData['tokenBalance']);
     _rewards = castToType<int>(snapshotData['rewards']);
+    _notifcount = castToType<int>(snapshotData['notifcount']);
+    _qrcode = snapshotData['qrcode'] as String?;
   }
 
   static CollectionReference get collection => FirebaseFirestore.instanceFor(
@@ -159,6 +171,8 @@ Map<String, dynamic> createUsersRecordData({
   int? walletBallance,
   int? tokenBalance,
   int? rewards,
+  int? notifcount,
+  String? qrcode,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -177,6 +191,8 @@ Map<String, dynamic> createUsersRecordData({
       'walletBallance': walletBallance,
       'tokenBalance': tokenBalance,
       'rewards': rewards,
+      'notifcount': notifcount,
+      'qrcode': qrcode,
     }.withoutNulls,
   );
 
@@ -202,7 +218,9 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.accountPhone == e2?.accountPhone &&
         e1?.walletBallance == e2?.walletBallance &&
         e1?.tokenBalance == e2?.tokenBalance &&
-        e1?.rewards == e2?.rewards;
+        e1?.rewards == e2?.rewards &&
+        e1?.notifcount == e2?.notifcount &&
+        e1?.qrcode == e2?.qrcode;
   }
 
   @override
@@ -221,7 +239,9 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.accountPhone,
         e?.walletBallance,
         e?.tokenBalance,
-        e?.rewards
+        e?.rewards,
+        e?.notifcount,
+        e?.qrcode
       ]);
 
   @override

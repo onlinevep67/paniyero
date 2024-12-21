@@ -485,7 +485,7 @@ class _Auth3LoginWidgetState extends State<Auth3LoginWidget>
                                               }
 
                                               context.pushNamedAuth(
-                                                  'Homepage', context.mounted);
+                                                  'Homepage1', context.mounted);
                                             },
                                             text: 'Login',
                                             options: FFButtonOptions(

@@ -854,7 +854,6 @@ class _Auth3CreateWidgetState extends State<Auth3CreateWidget>
                                                     displayName:
                                                         'Panyero Guest',
                                                     role: 'User',
-                                                    email: '',
                                                     sponsorPhone: _model
                                                         .sponsoPhoneTextController
                                                         .text,
@@ -867,9 +866,10 @@ class _Auth3CreateWidgetState extends State<Auth3CreateWidget>
                                                         .userPhoneTextController
                                                         .text,
                                                     rewards: 0,
+                                                    notifcount: 0,
                                                   ));
 
-                                              context.pushNamedAuth(
+                                              context.goNamedAuth(
                                                   'Homepage', context.mounted);
                                             },
                                             text: 'Create Account',

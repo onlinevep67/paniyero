@@ -5,8 +5,8 @@ import '../base_auth_user_provider.dart';
 
 export '../base_auth_user_provider.dart';
 
-class PanyeroV5FirebaseUser extends BaseAuthUser {
-  PanyeroV5FirebaseUser(this.user);
+class PanyeroFirebaseUser extends BaseAuthUser {
+  PanyeroFirebaseUser(this.user);
   User? user;
   bool get loggedIn => user != null;
 
@@ -58,18 +58,17 @@ class PanyeroV5FirebaseUser extends BaseAuthUser {
 
   static BaseAuthUser fromUserCredential(UserCredential userCredential) =>
       fromFirebaseUser(userCredential.user);
-  static BaseAuthUser fromFirebaseUser(User? user) =>
-      PanyeroV5FirebaseUser(user);
+  static BaseAuthUser fromFirebaseUser(User? user) => PanyeroFirebaseUser(user);
 }
 
-Stream<BaseAuthUser> panyeroV5FirebaseUserStream() => FirebaseAuth.instance
+Stream<BaseAuthUser> panyeroFirebaseUserStream() => FirebaseAuth.instance
         .authStateChanges()
         .debounce((user) => user == null && !loggedIn
             ? TimerStream(true, const Duration(seconds: 1))
             : Stream.value(user))
         .map<BaseAuthUser>(
       (user) {
-        currentUser = PanyeroV5FirebaseUser(user);
+        currentUser = PanyeroFirebaseUser(user);
         return currentUser!;
       },
     );

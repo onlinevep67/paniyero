@@ -131,25 +131,6 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
           ),
         ],
       ),
-      'iconButtonOnPageLoadAnimation2': AnimationInfo(
-        trigger: AnimationTrigger.onPageLoad,
-        effectsBuilder: () => [
-          FadeEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 600.0.ms,
-            begin: 0.0,
-            end: 1.0,
-          ),
-          ScaleEffect(
-            curve: Curves.easeInOut,
-            delay: 0.0.ms,
-            duration: 600.0.ms,
-            begin: Offset(0.4, 0.4),
-            end: Offset(1.0, 1.0),
-          ),
-        ],
-      ),
       'imageOnPageLoadAnimation3': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
@@ -188,7 +169,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
           ),
         ],
       ),
-      'iconButtonOnPageLoadAnimation3': AnimationInfo(
+      'iconButtonOnPageLoadAnimation2': AnimationInfo(
         trigger: AnimationTrigger.onPageLoad,
         effectsBuilder: () => [
           FadeEffect(
@@ -369,7 +350,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                                 child: Image.asset(
                                   'assets/images/3.webp',
                                   width: double.infinity,
-                                  height: 680.0,
+                                  height: 600.0,
                                   fit: BoxFit.cover,
                                 ).animateOnPageLoad(animationsMap[
                                     'imageOnPageLoadAnimation1']!),
@@ -513,7 +494,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                               Image.asset(
                                 'assets/images/1.webp',
                                 width: double.infinity,
-                                height: 680.0,
+                                height: 600.0,
                                 fit: BoxFit.cover,
                               ).animateOnPageLoad(
                                   animationsMap['imageOnPageLoadAnimation2']!),
@@ -608,37 +589,38 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                                       ).animateOnPageLoad(animationsMap[
                                           'textOnPageLoadAnimation2']!),
                                     ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 24.0, 0.0, 0.0),
+                                child: Row(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.end,
+                                  children: [
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 24.0, 0.0, 0.0),
-                                      child: Row(
-                                        mainAxisSize: MainAxisSize.max,
-                                        mainAxisAlignment:
-                                            MainAxisAlignment.end,
-                                        children: [
-                                          FlutterFlowIconButton(
-                                            borderColor: Colors.transparent,
-                                            borderRadius: 30.0,
-                                            borderWidth: 1.0,
-                                            buttonSize: 54.0,
-                                            icon: Icon(
-                                              Icons.navigate_next_rounded,
-                                              color:
-                                                  FlutterFlowTheme.of(context)
-                                                      .secondaryText,
-                                              size: 30.0,
-                                            ),
-                                            onPressed: () async {
-                                              await _model.pageViewController
-                                                  ?.nextPage(
-                                                duration:
-                                                    Duration(milliseconds: 300),
-                                                curve: Curves.ease,
-                                              );
-                                            },
-                                          ).animateOnPageLoad(animationsMap[
-                                              'iconButtonOnPageLoadAnimation2']!),
-                                        ],
+                                          0.0, 0.0, 20.0, 0.0),
+                                      child: InkWell(
+                                        splashColor: Colors.transparent,
+                                        focusColor: Colors.transparent,
+                                        hoverColor: Colors.transparent,
+                                        highlightColor: Colors.transparent,
+                                        onTap: () async {
+                                          await _model.pageViewController
+                                              ?.nextPage(
+                                            duration:
+                                                Duration(milliseconds: 300),
+                                            curve: Curves.ease,
+                                          );
+                                        },
+                                        child: Icon(
+                                          Icons.arrow_forward_ios,
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryText,
+                                          size: 32.0,
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -652,7 +634,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                               Image.asset(
                                 'assets/images/2.webp',
                                 width: double.infinity,
-                                height: 680.0,
+                                height: 600.0,
                                 fit: BoxFit.cover,
                               ).animateOnPageLoad(
                                   animationsMap['imageOnPageLoadAnimation3']!),
@@ -749,7 +731,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                                     ),
                                     Padding(
                                       padding: EdgeInsetsDirectional.fromSTEB(
-                                          0.0, 24.0, 0.0, 0.0),
+                                          0.0, 24.0, 0.0, 24.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         mainAxisAlignment:
@@ -761,7 +743,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                                             borderWidth: 1.0,
                                             buttonSize: 54.0,
                                             icon: Icon(
-                                              Icons.navigate_next_rounded,
+                                              Icons.arrow_forward_ios_sharp,
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryText,
@@ -776,7 +758,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget>
                                               );
                                             },
                                           ).animateOnPageLoad(animationsMap[
-                                              'iconButtonOnPageLoadAnimation3']!),
+                                              'iconButtonOnPageLoadAnimation2']!),
                                         ],
                                       ),
                                     ),

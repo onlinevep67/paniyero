@@ -126,11 +126,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => Auth3ForgotPasswordWidget(),
         ),
         FFRoute(
-          name: 'Homepage',
-          path: '/homepage',
-          builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Homepage')
-              : HomepageWidget(),
+          name: 'Homepage1',
+          path: '/homepage1',
+          builder: (context, params) => Homepage1Widget(),
         ),
         FFRoute(
           name: 'Finance',
@@ -162,6 +160,18 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Tester',
           path: '/tester',
           builder: (context, params) => TesterWidget(),
+        ),
+        FFRoute(
+          name: 'Homepage',
+          path: '/homepage',
+          builder: (context, params) => params.isEmpty
+              ? NavBarPage(initialPage: 'Homepage')
+              : HomepageWidget(),
+        ),
+        FFRoute(
+          name: 'Transactions',
+          path: '/transactions',
+          builder: (context, params) => TransactionsWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
