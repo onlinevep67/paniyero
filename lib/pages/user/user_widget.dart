@@ -96,19 +96,28 @@ class _UserWidgetState extends State<UserWidget> {
                             Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   4.0, 0.0, 0.0, 0.0),
-                              child: Text(
-                                'Back',
-                                style: FlutterFlowTheme.of(context)
-                                    .headlineMedium
-                                    .override(
-                                      fontFamily: 'Roboto',
-                                      color: FlutterFlowTheme.of(context)
-                                          .primaryText,
-                                      fontSize: 16.0,
-                                      letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey('Roboto'),
-                                    ),
+                              child: InkWell(
+                                splashColor: Colors.transparent,
+                                focusColor: Colors.transparent,
+                                hoverColor: Colors.transparent,
+                                highlightColor: Colors.transparent,
+                                onTap: () async {
+                                  context.safePop();
+                                },
+                                child: Text(
+                                  'Back',
+                                  style: FlutterFlowTheme.of(context)
+                                      .headlineMedium
+                                      .override(
+                                        fontFamily: 'Roboto',
+                                        color: FlutterFlowTheme.of(context)
+                                            .primaryText,
+                                        fontSize: 16.0,
+                                        letterSpacing: 0.0,
+                                        useGoogleFonts: GoogleFonts.asMap()
+                                            .containsKey('Roboto'),
+                                      ),
+                                ),
                               ),
                             ),
                           ],
@@ -604,7 +613,7 @@ class _UserWidgetState extends State<UserWidget> {
                       width: double.infinity,
                       height: 60.0,
                       decoration: BoxDecoration(
-                        color: FlutterFlowTheme.of(context).secondary,
+                        color: FlutterFlowTheme.of(context).warning,
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 5.0,

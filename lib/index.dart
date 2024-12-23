@@ -10,4 +10,8 @@ export '/auth_flow/onboarding/onboarding_widget.dart' show OnboardingWidget;
 export '/auth_flow/create_account/create_account_widget.dart'
     show CreateAccountWidget;
 export '/auth_flow/login/login_widget.dart' show LoginWidget;
-export '/create_profile/create_profile_widget.dart' show CreateProfileWidget;
+export '/pages/create_profile/create_profile_widget.dart'
+    show CreateProfileWidget;
+export '/pages/notifications/notifications_widget.dart'
+    show NotificationsWidget;
+export '/biometrics/biometrics_widget.dart' show BiometricsWidget;

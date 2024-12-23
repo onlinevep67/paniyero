@@ -106,37 +106,48 @@ class _LogoheaderWidgetState extends State<LogoheaderWidget>
               ),
               if (valueOrDefault(currentUserDocument?.notifcount, 0) != 0)
                 AuthUserStreamWidget(
-                  builder: (context) => badges.Badge(
-                    badgeContent: Text(
-                      valueOrDefault<String>(
-                        valueOrDefault(currentUserDocument?.notifcount, 0)
-                            .toString(),
-                        '0',
+                  builder: (context) => InkWell(
+                    splashColor: Colors.transparent,
+                    focusColor: Colors.transparent,
+                    hoverColor: Colors.transparent,
+                    highlightColor: Colors.transparent,
+                    onTap: () async {
+                      context.pushNamed('Notifications');
+                    },
+                    child: badges.Badge(
+                      badgeContent: Text(
+                        valueOrDefault<String>(
+                          valueOrDefault(currentUserDocument?.notifcount, 0)
+                              .toString(),
+                          '0',
+                        ),
+                        style: FlutterFlowTheme.of(context).titleSmall.override(
+                              fontFamily:
+                                  FlutterFlowTheme.of(context).titleSmallFamily,
+                              color: Colors.white,
+                              letterSpacing: 0.0,
+                              useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                  FlutterFlowTheme.of(context)
+                                      .titleSmallFamily),
+                            ),
                       ),
-                      style: FlutterFlowTheme.of(context).titleSmall.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).titleSmallFamily,
-                            color: Colors.white,
-                            letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).titleSmallFamily),
-                          ),
-                    ),
-                    showBadge: true,
-                    shape: badges.BadgeShape.circle,
-                    badgeColor: FlutterFlowTheme.of(context).primary,
-                    elevation: 4.0,
-                    padding: EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
-                    position: badges.BadgePosition.topEnd(),
-                    animationType: badges.BadgeAnimationType.scale,
-                    toAnimate: true,
-                    child: Padding(
+                      showBadge: true,
+                      shape: badges.BadgeShape.circle,
+                      badgeColor: FlutterFlowTheme.of(context).primary,
+                      elevation: 4.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
-                      child: Icon(
-                        Icons.notifications_sharp,
-                        color: FlutterFlowTheme.of(context).primaryText,
-                        size: 28.0,
+                          EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                      position: badges.BadgePosition.topEnd(),
+                      animationType: badges.BadgeAnimationType.scale,
+                      toAnimate: true,
+                      child: Padding(
+                        padding:
+                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                        child: Icon(
+                          Icons.notifications_sharp,
+                          color: FlutterFlowTheme.of(context).primaryText,
+                          size: 28.0,
+                        ),
                       ),
                     ),
                   ),

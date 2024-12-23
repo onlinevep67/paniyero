@@ -1,6 +1,6 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
-import '/components/logoheader_widget.dart';
+import '/components/logoheader/logoheader_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -405,13 +405,13 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                         CrossAxisAlignment.center,
                                     children: [
                                       Icon(
-                                        Icons.directions_car,
+                                        Icons.build_circle,
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryText,
                                         size: 24.0,
                                       ),
                                       Text(
-                                        'Vehicle',
+                                        'Utilities',
                                         style: FlutterFlowTheme.of(context)
                                             .bodySmall
                                             .override(
@@ -435,13 +435,13 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                         CrossAxisAlignment.center,
                                     children: [
                                       Icon(
-                                        Icons.sports_esports,
+                                        Icons.monetization_on,
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryText,
                                         size: 24.0,
                                       ),
                                       Text(
-                                        'Games',
+                                        'Finance',
                                         style: FlutterFlowTheme.of(context)
                                             .bodySmall
                                             .override(
@@ -464,14 +464,14 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                     crossAxisAlignment:
                                         CrossAxisAlignment.center,
                                     children: [
-                                      FaIcon(
-                                        FontAwesomeIcons.bowlingBall,
+                                      Icon(
+                                        Icons.school_sharp,
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryText,
                                         size: 24.0,
                                       ),
                                       Text(
-                                        'Lottery',
+                                        'Academy',
                                         style: FlutterFlowTheme.of(context)
                                             .bodySmall
                                             .override(
@@ -503,13 +503,13 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                           CrossAxisAlignment.center,
                                       children: [
                                         Icon(
-                                          Icons.keyboard_control,
+                                          Icons.movie_filter_rounded,
                                           color: FlutterFlowTheme.of(context)
                                               .secondaryText,
                                           size: 24.0,
                                         ),
                                         Text(
-                                          'More',
+                                          'Media',
                                           style: FlutterFlowTheme.of(context)
                                               .bodySmall
                                               .override(
@@ -559,7 +559,7 @@ class _HomepageWidgetState extends State<HomepageWidget> {
                                           size: 24.0,
                                         ),
                                         Text(
-                                          'Vehicle',
+                                          'Maritine',
                                           style: FlutterFlowTheme.of(context)
                                               .bodySmall
                                               .override(

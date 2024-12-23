@@ -88,62 +88,87 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                           EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
-                        mainAxisAlignment: MainAxisAlignment.end,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
-                                4.0, 0.0, 0.0, 0.0),
+                                24.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'Skip for now',
+                              'Update Profile',
                               style: FlutterFlowTheme.of(context)
                                   .headlineMedium
                                   .override(
                                     fontFamily: 'Roboto',
                                     color: FlutterFlowTheme.of(context)
                                         .primaryText,
-                                    fontSize: 16.0,
+                                    fontSize: 22.0,
                                     letterSpacing: 0.0,
                                     useGoogleFonts: GoogleFonts.asMap()
                                         .containsKey('Roboto'),
                                   ),
                             ),
                           ),
-                          Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
-                                12.0, 0.0, 20.0, 0.0),
-                            child: FlutterFlowIconButton(
-                              borderColor: Colors.transparent,
-                              borderRadius: 30.0,
-                              borderWidth: 1.0,
-                              buttonSize: 44.0,
-                              icon: Icon(
-                                Icons.arrow_forward_ios,
-                                color: FlutterFlowTheme.of(context).primary,
-                                size: 24.0,
-                              ),
-                              onPressed: () async {
-                                context.pop();
-                              },
+                          InkWell(
+                            splashColor: Colors.transparent,
+                            focusColor: Colors.transparent,
+                            hoverColor: Colors.transparent,
+                            highlightColor: Colors.transparent,
+                            onTap: () async {
+                              context.pushNamed('Homepage');
+                            },
+                            child: Row(
+                              mainAxisSize: MainAxisSize.max,
+                              children: [
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      4.0, 0.0, 0.0, 0.0),
+                                  child: InkWell(
+                                    splashColor: Colors.transparent,
+                                    focusColor: Colors.transparent,
+                                    hoverColor: Colors.transparent,
+                                    highlightColor: Colors.transparent,
+                                    onTap: () async {
+                                      context.pushNamed('Homepage');
+                                    },
+                                    child: Text(
+                                      'Skip for now',
+                                      style: FlutterFlowTheme.of(context)
+                                          .headlineMedium
+                                          .override(
+                                            fontFamily: 'Roboto',
+                                            color: FlutterFlowTheme.of(context)
+                                                .secondary,
+                                            fontSize: 16.0,
+                                            letterSpacing: 0.0,
+                                            useGoogleFonts: GoogleFonts.asMap()
+                                                .containsKey('Roboto'),
+                                          ),
+                                    ),
+                                  ),
+                                ),
+                                Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 0.0, 20.0, 0.0),
+                                  child: FlutterFlowIconButton(
+                                    borderColor: Colors.transparent,
+                                    borderRadius: 30.0,
+                                    borderWidth: 1.0,
+                                    buttonSize: 44.0,
+                                    icon: Icon(
+                                      Icons.arrow_forward_ios,
+                                      color:
+                                          FlutterFlowTheme.of(context).primary,
+                                      size: 24.0,
+                                    ),
+                                    onPressed: () async {
+                                      context.pushNamed('Homepage');
+                                    },
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ],
-                      ),
-                    ),
-                    Padding(
-                      padding:
-                          EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 0.0, 0.0),
-                      child: Text(
-                        'Update Profile',
-                        style: FlutterFlowTheme.of(context)
-                            .headlineMedium
-                            .override(
-                              fontFamily: 'Roboto',
-                              color: FlutterFlowTheme.of(context).primaryText,
-                              fontSize: 22.0,
-                              letterSpacing: 0.0,
-                              useGoogleFonts:
-                                  GoogleFonts.asMap().containsKey('Roboto'),
-                            ),
                       ),
                     ),
                   ],
@@ -1164,10 +1189,10 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                             return;
                                           }
                                         },
-                                        text: 'Submit Form',
+                                        text: 'Update Now',
                                         options: FFButtonOptions(
                                           width: double.infinity,
-                                          height: 48.0,
+                                          height: 55.0,
                                           padding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   24.0, 0.0, 24.0, 0.0),

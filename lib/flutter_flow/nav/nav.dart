@@ -149,6 +149,16 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'CreateProfile',
           path: '/createProfile',
           builder: (context, params) => CreateProfileWidget(),
+        ),
+        FFRoute(
+          name: 'Notifications',
+          path: '/notifications',
+          builder: (context, params) => NotificationsWidget(),
+        ),
+        FFRoute(
+          name: 'Biometrics',
+          path: '/biometrics',
+          builder: (context, params) => BiometricsWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
