@@ -91,11 +91,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               appStateNotifier.loggedIn ? NavBarPage() : OnboardingWidget(),
         ),
         FFRoute(
-          name: 'Onboarding',
-          path: '/onboarding',
-          builder: (context, params) => OnboardingWidget(),
-        ),
-        FFRoute(
           name: 'auth_3_Create',
           path: '/auth3Create',
           builder: (context, params) => Auth3CreateWidget(),
@@ -106,29 +101,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => Auth3LoginWidget(),
         ),
         FFRoute(
-          name: 'auth_3_phone',
-          path: '/auth3Phone',
-          builder: (context, params) => Auth3PhoneWidget(),
-        ),
-        FFRoute(
-          name: 'auth_3_verifyPhone',
-          path: '/auth3VerifyPhone',
-          builder: (context, params) => Auth3VerifyPhoneWidget(
-            phoneNumber: params.getParam(
-              'phoneNumber',
-              ParamType.String,
-            ),
-          ),
-        ),
-        FFRoute(
           name: 'auth_3_ForgotPassword',
           path: '/auth3ForgotPassword',
           builder: (context, params) => Auth3ForgotPasswordWidget(),
-        ),
-        FFRoute(
-          name: 'Homepage1',
-          path: '/homepage1',
-          builder: (context, params) => Homepage1Widget(),
         ),
         FFRoute(
           name: 'Finance',
@@ -157,11 +132,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               params.isEmpty ? NavBarPage(initialPage: 'Scan') : ScanWidget(),
         ),
         FFRoute(
-          name: 'Tester',
-          path: '/tester',
-          builder: (context, params) => TesterWidget(),
-        ),
-        FFRoute(
           name: 'Homepage',
           path: '/homepage',
           builder: (context, params) => params.isEmpty
@@ -169,14 +139,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               : HomepageWidget(),
         ),
         FFRoute(
-          name: 'Transactions',
-          path: '/transactions',
-          builder: (context, params) => TransactionsWidget(),
-        ),
-        FFRoute(
-          name: 'Profile',
-          path: '/profile',
-          builder: (context, params) => ProfileWidget(),
+          name: 'Onboarding',
+          path: '/onboarding',
+          builder: (context, params) => OnboardingWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
