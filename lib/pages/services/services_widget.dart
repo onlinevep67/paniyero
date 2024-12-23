@@ -63,10 +63,13 @@ class _ServicesWidgetState extends State<ServicesWidget> {
           elevation: 0.0,
         ),
         body: Container(
-          decoration: BoxDecoration(),
+          decoration: BoxDecoration(
+            color: FlutterFlowTheme.of(context).secondaryBackground,
+          ),
           child: SingleChildScrollView(
             child: Column(
               mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Container(
                   width: MediaQuery.sizeOf(context).width * 1.0,
