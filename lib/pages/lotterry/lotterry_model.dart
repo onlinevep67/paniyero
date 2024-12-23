@@ -3,13 +3,13 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
-import 'finance_widget.dart' show FinanceWidget;
+import 'lotterry_widget.dart' show LotterryWidget;
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class FinanceModel extends FlutterFlowModel<FinanceWidget> {
+class LotterryModel extends FlutterFlowModel<LotterryWidget> {
   @override
   void initState(BuildContext context) {}
 

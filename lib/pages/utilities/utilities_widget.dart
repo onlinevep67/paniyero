@@ -7,25 +7,25 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'finance_model.dart';
-export 'finance_model.dart';
+import 'utilities_model.dart';
+export 'utilities_model.dart';
 
-class FinanceWidget extends StatefulWidget {
-  const FinanceWidget({super.key});
+class UtilitiesWidget extends StatefulWidget {
+  const UtilitiesWidget({super.key});
 
   @override
-  State<FinanceWidget> createState() => _FinanceWidgetState();
+  State<UtilitiesWidget> createState() => _UtilitiesWidgetState();
 }
 
-class _FinanceWidgetState extends State<FinanceWidget> {
-  late FinanceModel _model;
+class _UtilitiesWidgetState extends State<UtilitiesWidget> {
+  late UtilitiesModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => FinanceModel());
+    _model = createModel(context, () => UtilitiesModel());
   }
 
   @override
@@ -63,7 +63,7 @@ class _FinanceWidgetState extends State<FinanceWidget> {
             },
           ),
           title: Text(
-            'Finance',
+            'Bills & Utilities',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Roboto',
                   color: FlutterFlowTheme.of(context).primaryText,

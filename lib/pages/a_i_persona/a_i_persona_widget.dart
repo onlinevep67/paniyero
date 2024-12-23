@@ -7,25 +7,25 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'finance_model.dart';
-export 'finance_model.dart';
+import 'a_i_persona_model.dart';
+export 'a_i_persona_model.dart';
 
-class FinanceWidget extends StatefulWidget {
-  const FinanceWidget({super.key});
+class AIPersonaWidget extends StatefulWidget {
+  const AIPersonaWidget({super.key});
 
   @override
-  State<FinanceWidget> createState() => _FinanceWidgetState();
+  State<AIPersonaWidget> createState() => _AIPersonaWidgetState();
 }
 
-class _FinanceWidgetState extends State<FinanceWidget> {
-  late FinanceModel _model;
+class _AIPersonaWidgetState extends State<AIPersonaWidget> {
+  late AIPersonaModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => FinanceModel());
+    _model = createModel(context, () => AIPersonaModel());
   }
 
   @override
@@ -63,7 +63,7 @@ class _FinanceWidgetState extends State<FinanceWidget> {
             },
           ),
           title: Text(
-            'Finance',
+            'AI Persona',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Roboto',
                   color: FlutterFlowTheme.of(context).primaryText,

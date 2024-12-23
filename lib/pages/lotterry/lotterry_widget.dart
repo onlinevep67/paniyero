@@ -7,25 +7,25 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'finance_model.dart';
-export 'finance_model.dart';
+import 'lotterry_model.dart';
+export 'lotterry_model.dart';
 
-class FinanceWidget extends StatefulWidget {
-  const FinanceWidget({super.key});
+class LotterryWidget extends StatefulWidget {
+  const LotterryWidget({super.key});
 
   @override
-  State<FinanceWidget> createState() => _FinanceWidgetState();
+  State<LotterryWidget> createState() => _LotterryWidgetState();
 }
 
-class _FinanceWidgetState extends State<FinanceWidget> {
-  late FinanceModel _model;
+class _LotterryWidgetState extends State<LotterryWidget> {
+  late LotterryModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => FinanceModel());
+    _model = createModel(context, () => LotterryModel());
   }
 
   @override
@@ -63,7 +63,7 @@ class _FinanceWidgetState extends State<FinanceWidget> {
             },
           ),
           title: Text(
-            'Finance',
+            'Lotto',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Roboto',
                   color: FlutterFlowTheme.of(context).primaryText,

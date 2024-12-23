@@ -98,11 +98,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => ForgotPasswordWidget(),
         ),
         FFRoute(
-          name: 'Finance',
-          path: '/finance',
+          name: 'Transactions',
+          path: '/transactions',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Finance')
-              : FinanceWidget(),
+              ? NavBarPage(initialPage: 'Transactions')
+              : TransactionsWidget(),
         ),
         FFRoute(
           name: 'Services',
@@ -159,6 +159,46 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Biometrics',
           path: '/biometrics',
           builder: (context, params) => BiometricsWidget(),
+        ),
+        FFRoute(
+          name: 'Maritine',
+          path: '/maritine',
+          builder: (context, params) => MaritineWidget(),
+        ),
+        FFRoute(
+          name: 'Games',
+          path: '/games',
+          builder: (context, params) => GamesWidget(),
+        ),
+        FFRoute(
+          name: 'Lotterry',
+          path: '/lotterry',
+          builder: (context, params) => LotterryWidget(),
+        ),
+        FFRoute(
+          name: 'AIPersona',
+          path: '/aIPersona',
+          builder: (context, params) => AIPersonaWidget(),
+        ),
+        FFRoute(
+          name: 'Media',
+          path: '/media',
+          builder: (context, params) => MediaWidget(),
+        ),
+        FFRoute(
+          name: 'Utilities',
+          path: '/utilities',
+          builder: (context, params) => UtilitiesWidget(),
+        ),
+        FFRoute(
+          name: 'Finance',
+          path: '/finance',
+          builder: (context, params) => FinanceWidget(),
+        ),
+        FFRoute(
+          name: 'Academy',
+          path: '/academy',
+          builder: (context, params) => AcademyWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

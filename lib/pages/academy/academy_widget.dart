@@ -7,25 +7,25 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'finance_model.dart';
-export 'finance_model.dart';
+import 'academy_model.dart';
+export 'academy_model.dart';
 
-class FinanceWidget extends StatefulWidget {
-  const FinanceWidget({super.key});
+class AcademyWidget extends StatefulWidget {
+  const AcademyWidget({super.key});
 
   @override
-  State<FinanceWidget> createState() => _FinanceWidgetState();
+  State<AcademyWidget> createState() => _AcademyWidgetState();
 }
 
-class _FinanceWidgetState extends State<FinanceWidget> {
-  late FinanceModel _model;
+class _AcademyWidgetState extends State<AcademyWidget> {
+  late AcademyModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => FinanceModel());
+    _model = createModel(context, () => AcademyModel());
   }
 
   @override
@@ -63,7 +63,7 @@ class _FinanceWidgetState extends State<FinanceWidget> {
             },
           ),
           title: Text(
-            'Finance',
+            'Online Academy',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Roboto',
                   color: FlutterFlowTheme.of(context).primaryText,

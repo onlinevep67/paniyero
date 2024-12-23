@@ -304,8 +304,8 @@ class _BiometricsWidgetState extends State<BiometricsWidget> {
                 Padding(
                   padding: EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
                   child: FFButtonWidget(
-                    onPressed: () {
-                      print('Button pressed ...');
+                    onPressed: () async {
+                      context.pushNamed('Homepage');
                     },
                     text: 'Capture Photo',
                     options: FFButtonOptions(

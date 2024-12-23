@@ -7,25 +7,25 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'finance_model.dart';
-export 'finance_model.dart';
+import 'media_model.dart';
+export 'media_model.dart';
 
-class FinanceWidget extends StatefulWidget {
-  const FinanceWidget({super.key});
+class MediaWidget extends StatefulWidget {
+  const MediaWidget({super.key});
 
   @override
-  State<FinanceWidget> createState() => _FinanceWidgetState();
+  State<MediaWidget> createState() => _MediaWidgetState();
 }
 
-class _FinanceWidgetState extends State<FinanceWidget> {
-  late FinanceModel _model;
+class _MediaWidgetState extends State<MediaWidget> {
+  late MediaModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => FinanceModel());
+    _model = createModel(context, () => MediaModel());
   }
 
   @override
@@ -63,7 +63,7 @@ class _FinanceWidgetState extends State<FinanceWidget> {
             },
           ),
           title: Text(
-            'Finance',
+            'Media & Entertainment',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Roboto',
                   color: FlutterFlowTheme.of(context).primaryText,
