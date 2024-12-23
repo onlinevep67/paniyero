@@ -352,7 +352,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                       children: [
                         FFButtonWidget(
                           onPressed: () async {
-                            context.pushNamed('auth_3_Login');
+                            context.pushNamed('Login');
                           },
                           text: 'Login',
                           options: FFButtonOptions(
@@ -386,7 +386,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                         ),
                         FFButtonWidget(
                           onPressed: () async {
-                            context.pushNamed('auth_3_Create');
+                            context.pushNamed('CreateAccount');
                           },
                           text: 'Register',
                           options: FFButtonOptions(

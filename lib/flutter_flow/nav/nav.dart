@@ -93,19 +93,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               appStateNotifier.loggedIn ? NavBarPage() : OnboardingWidget(),
         ),
         FFRoute(
-          name: 'auth_3_Create',
-          path: '/auth3Create',
-          builder: (context, params) => Auth3CreateWidget(),
-        ),
-        FFRoute(
-          name: 'auth_3_Login',
-          path: '/auth3Login',
-          builder: (context, params) => Auth3LoginWidget(),
-        ),
-        FFRoute(
-          name: 'auth_3_ForgotPassword',
-          path: '/auth3ForgotPassword',
-          builder: (context, params) => Auth3ForgotPasswordWidget(),
+          name: 'ForgotPassword',
+          path: '/forgotPassword',
+          builder: (context, params) => ForgotPasswordWidget(),
         ),
         FFRoute(
           name: 'Finance',
@@ -144,6 +134,21 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: 'Onboarding',
           path: '/onboarding',
           builder: (context, params) => OnboardingWidget(),
+        ),
+        FFRoute(
+          name: 'CreateAccount',
+          path: '/createAccount',
+          builder: (context, params) => CreateAccountWidget(),
+        ),
+        FFRoute(
+          name: 'Login',
+          path: '/login',
+          builder: (context, params) => LoginWidget(),
+        ),
+        FFRoute(
+          name: 'CreateProfile',
+          path: '/createProfile',
+          builder: (context, params) => CreateProfileWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

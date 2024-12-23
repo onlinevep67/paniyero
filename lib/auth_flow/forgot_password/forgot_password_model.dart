@@ -6,7 +6,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:math';
 import 'dart:ui';
-import 'auth3_forgot_password_widget.dart' show Auth3ForgotPasswordWidget;
+import 'forgot_password_widget.dart' show ForgotPasswordWidget;
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -14,8 +14,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:provider/provider.dart';
 
-class Auth3ForgotPasswordModel
-    extends FlutterFlowModel<Auth3ForgotPasswordWidget> {
+class ForgotPasswordModel extends FlutterFlowModel<ForgotPasswordWidget> {
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for email widget.

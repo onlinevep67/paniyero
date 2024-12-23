@@ -1,21 +1,22 @@
 import '/auth/firebase_auth/auth_util.dart';
-import '/flutter_flow/flutter_flow_animations.dart';
+import '/components/logo_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'dart:ui';
-import 'auth3_login_widget.dart' show Auth3LoginWidget;
+import 'login_widget.dart' show LoginWidget;
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter_animate/flutter_animate.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 
-class Auth3LoginModel extends FlutterFlowModel<Auth3LoginWidget> {
+class LoginModel extends FlutterFlowModel<LoginWidget> {
   ///  State fields for stateful widgets in this page.
 
+  // Model for logo component.
+  late LogoModel logoModel;
   // State field(s) for emailAddress widget.
   FocusNode? emailAddressFocusNode;
   TextEditingController? emailAddressTextController;
@@ -28,11 +29,13 @@ class Auth3LoginModel extends FlutterFlowModel<Auth3LoginWidget> {
 
   @override
   void initState(BuildContext context) {
+    logoModel = createModel(context, () => LogoModel());
     passwordVisibility = false;
   }
 
   @override
   void dispose() {
+    logoModel.dispose();
     emailAddressFocusNode?.dispose();
     emailAddressTextController?.dispose();
 

@@ -12,20 +12,19 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:provider/provider.dart';
-import 'auth3_forgot_password_model.dart';
-export 'auth3_forgot_password_model.dart';
+import 'forgot_password_model.dart';
+export 'forgot_password_model.dart';
 
-class Auth3ForgotPasswordWidget extends StatefulWidget {
-  const Auth3ForgotPasswordWidget({super.key});
+class ForgotPasswordWidget extends StatefulWidget {
+  const ForgotPasswordWidget({super.key});
 
   @override
-  State<Auth3ForgotPasswordWidget> createState() =>
-      _Auth3ForgotPasswordWidgetState();
+  State<ForgotPasswordWidget> createState() => _ForgotPasswordWidgetState();
 }
 
-class _Auth3ForgotPasswordWidgetState extends State<Auth3ForgotPasswordWidget>
+class _ForgotPasswordWidgetState extends State<ForgotPasswordWidget>
     with TickerProviderStateMixin {
-  late Auth3ForgotPasswordModel _model;
+  late ForgotPasswordModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -34,7 +33,7 @@ class _Auth3ForgotPasswordWidgetState extends State<Auth3ForgotPasswordWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => Auth3ForgotPasswordModel());
+    _model = createModel(context, () => ForgotPasswordModel());
 
     _model.emailTextController ??= TextEditingController();
     _model.emailFocusNode ??= FocusNode();
