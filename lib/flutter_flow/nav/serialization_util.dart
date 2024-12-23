@@ -5,6 +5,8 @@ import 'package:from_css_color/from_css_color.dart';
 
 import '/backend/backend.dart';
 
+import '/backend/supabase/supabase.dart';
+
 import '../../flutter_flow/lat_lng.dart';
 import '../../flutter_flow/place.dart';
 import '../../flutter_flow/uploaded_file.dart';
@@ -89,6 +91,9 @@ String? serializeParam(
       case ParamType.Document:
         final reference = (param as FirestoreRecord).reference;
         data = _serializeDocumentReference(reference);
+
+      case ParamType.SupabaseRow:
+        return json.encode((param as SupabaseDataRow).data);
 
       default:
         data = null;
@@ -182,6 +187,7 @@ enum ParamType {
 
   Document,
   DocumentReference,
+  SupabaseRow,
 }
 
 dynamic deserializeParam<T>(
@@ -236,6 +242,37 @@ dynamic deserializeParam<T>(
         return json.decode(param);
       case ParamType.DocumentReference:
         return _deserializeDocumentReference(param, collectionNamePath ?? []);
+
+      case ParamType.SupabaseRow:
+        final data = json.decode(param) as Map<String, dynamic>;
+        switch (T) {
+          case GameTransactionsRow:
+            return GameTransactionsRow(data);
+          case WalletsRow:
+            return WalletsRow(data);
+          case TransactionsRow:
+            return TransactionsRow(data);
+          case ServicesRow:
+            return ServicesRow(data);
+          case BetsRow:
+            return BetsRow(data);
+          case RewardsRow:
+            return RewardsRow(data);
+          case FeedbackRow:
+            return FeedbackRow(data);
+          case ServiceTransactionsRow:
+            return ServiceTransactionsRow(data);
+          case AdminSettingsRow:
+            return AdminSettingsRow(data);
+          case GamesRow:
+            return GamesRow(data);
+          case UsersRow:
+            return UsersRow(data);
+          case AffiliatesRow:
+            return AffiliatesRow(data);
+          default:
+            return null;
+        }
 
       default:
         return null;
