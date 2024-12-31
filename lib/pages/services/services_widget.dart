@@ -198,6 +198,14 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                     ),
                                   ].divide(SizedBox(height: 8.0)),
                                 ),
+                                Align(
+                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  child: Icon(
+                                    Icons.medical_services,
+                                    color: FlutterFlowTheme.of(context).primary,
+                                    size: 24.0,
+                                  ),
+                                ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -248,12 +256,6 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                             .primaryBackground,
                                         borderRadius:
                                             BorderRadius.circular(12.0),
-                                      ),
-                                      child: Icon(
-                                        Icons.medical_services,
-                                        color: FlutterFlowTheme.of(context)
-                                            .primary,
-                                        size: 24.0,
                                       ),
                                     ),
                                     Text(
@@ -356,6 +358,11 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                     ),
                                   ].divide(SizedBox(height: 8.0)),
                                 ),
+                                Icon(
+                                  Icons.receipt,
+                                  color: FlutterFlowTheme.of(context).primary,
+                                  size: 24.0,
+                                ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
                                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -368,12 +375,6 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                             .primaryBackground,
                                         borderRadius:
                                             BorderRadius.circular(12.0),
-                                      ),
-                                      child: Icon(
-                                        Icons.receipt,
-                                        color: FlutterFlowTheme.of(context)
-                                            .primary,
-                                        size: 24.0,
                                       ),
                                     ),
                                     Text(

@@ -55,20 +55,21 @@ class _HomepageWidgetState extends State<HomepageWidget> {
             automaticallyImplyLeading: false,
             actions: [],
             flexibleSpace: FlexibleSpaceBar(
-              title: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 14.0),
-                child: Column(
-                  mainAxisSize: MainAxisSize.max,
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    wrapWithModel(
+              title: Column(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                    child: wrapWithModel(
                       model: _model.logoheaderModel,
                       updateCallback: () => safeSetState(() {}),
                       child: LogoheaderWidget(),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
               centerTitle: true,
               expandedTitleScale: 1.0,

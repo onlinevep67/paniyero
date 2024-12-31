@@ -10,8 +10,8 @@ Future initFirebase() async {
             projectId: "panyero-v5-1u81xf",
             storageBucket: "panyero-v5-1u81xf.firebasestorage.app",
             messagingSenderId: "115929057422",
-            appId: "1:115929057422:web:4761f497e355fb8553e1df",
-            measurementId: "G-ES714C7CT8"));
+            appId: "1:115929057422:web:4395fcbe3f2a8b0453e1df",
+            measurementId: "G-176JFP0JF9"));
   } else {
     await Firebase.initializeApp();
   }
