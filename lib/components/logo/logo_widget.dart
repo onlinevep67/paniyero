@@ -1,9 +1,5 @@
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'logo_model.dart';
 export 'logo_model.dart';
 
@@ -43,7 +39,7 @@ class _LogoWidgetState extends State<LogoWidget> {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Container(
-          decoration: BoxDecoration(),
+          decoration: const BoxDecoration(),
           child: InkWell(
             splashColor: Colors.transparent,
             focusColor: Colors.transparent,

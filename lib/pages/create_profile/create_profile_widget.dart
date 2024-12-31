@@ -4,11 +4,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
-import 'package:provider/provider.dart';
 import 'create_profile_model.dart';
 export 'create_profile_model.dart';
 
@@ -70,14 +67,14 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(100.0),
+          preferredSize: const Size.fromHeight(100.0),
           child: AppBar(
             backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
             automaticallyImplyLeading: false,
-            actions: [],
+            actions: const [],
             flexibleSpace: FlexibleSpaceBar(
               title: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 14.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 14.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -85,13 +82,13 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 0.0, 0.0, 0.0),
                             child: Text(
                               'Update Profile',
@@ -120,7 +117,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                               mainAxisSize: MainAxisSize.max,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       4.0, 0.0, 0.0, 0.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
@@ -147,7 +144,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 20.0, 0.0),
                                   child: FlutterFlowIconButton(
                                     borderColor: Colors.transparent,
@@ -195,14 +192,14 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                       mainAxisSize: MainAxisSize.max,
                       children: [
                         Align(
-                          alignment: AlignmentDirectional(0.0, -1.0),
+                          alignment: const AlignmentDirectional(0.0, -1.0),
                           child: Container(
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 770.0,
                             ),
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   16.0, 12.0, 16.0, 0.0),
                               child: SingleChildScrollView(
                                 primary: false,
@@ -311,7 +308,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                             : FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
                                         contentPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 16.0, 20.0, 16.0, 20.0),
                                       ),
                                       style: FlutterFlowTheme.of(context)
@@ -433,7 +430,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                             : FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
                                         contentPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 16.0, 20.0, 16.0, 20.0),
                                       ),
                                       style: FlutterFlowTheme.of(context)
@@ -554,7 +551,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                             : FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
                                         contentPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 16.0, 20.0, 16.0, 20.0),
                                       ),
                                       style: FlutterFlowTheme.of(context)
@@ -675,7 +672,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                                 : FlutterFlowTheme.of(context)
                                                     .secondaryBackground,
                                         contentPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 16.0, 20.0, 16.0, 20.0),
                                       ),
                                       style: FlutterFlowTheme.of(context)
@@ -797,7 +794,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                             : FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
                                         contentPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 16.0, 20.0, 16.0, 20.0),
                                       ),
                                       style: FlutterFlowTheme.of(context)
@@ -919,7 +916,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                             : FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
                                         contentPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 16.0, 20.0, 16.0, 20.0),
                                       ),
                                       style: FlutterFlowTheme.of(context)
@@ -1057,7 +1054,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                             : FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
                                         contentPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 16.0, 20.0, 16.0, 20.0),
                                       ),
                                       style: FlutterFlowTheme.of(context)
@@ -1094,7 +1091,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                           ),
                                     ),
                                     FlutterFlowChoiceChips(
-                                      options: [
+                                      options: const [
                                         ChipData('Female'),
                                         ChipData('Male'),
                                         ChipData('Other')
@@ -1178,7 +1175,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                       wrapped: true,
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 20.0, 0.0, 25.0),
                                       child: FFButtonWidget(
                                         onPressed: () async {
@@ -1194,10 +1191,10 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                           width: double.infinity,
                                           height: 55.0,
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   24.0, 0.0, 24.0, 0.0),
                                           iconPadding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
                                           color: FlutterFlowTheme.of(context)
                                               .primary,
@@ -1218,7 +1215,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                                             .titleSmallFamily),
                                               ),
                                           elevation: 3.0,
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Colors.transparent,
                                             width: 1.0,
                                           ),
@@ -1228,8 +1225,8 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                                       ),
                                     ),
                                   ]
-                                      .divide(SizedBox(height: 12.0))
-                                      .addToEnd(SizedBox(height: 32.0)),
+                                      .divide(const SizedBox(height: 12.0))
+                                      .addToEnd(const SizedBox(height: 32.0)),
                                 ),
                               ),
                             ),
@@ -1240,10 +1237,10 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget> {
                   ),
                 ),
                 Container(
-                  constraints: BoxConstraints(
+                  constraints: const BoxConstraints(
                     maxWidth: 770.0,
                   ),
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                 ),
               ],
             ),

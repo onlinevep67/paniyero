@@ -1,12 +1,8 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'maritine_model.dart';
 export 'maritine_model.dart';
 
@@ -72,7 +68,7 @@ class _MaritineWidgetState extends State<MaritineWidget> {
                   useGoogleFonts: GoogleFonts.asMap().containsKey('Roboto'),
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -86,7 +82,7 @@ class _MaritineWidgetState extends State<MaritineWidget> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10.0),
                     child: Container(
@@ -96,7 +92,7 @@ class _MaritineWidgetState extends State<MaritineWidget> {
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 16.0, 16.0, 16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -142,7 +138,7 @@ class _MaritineWidgetState extends State<MaritineWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -180,7 +176,7 @@ class _MaritineWidgetState extends State<MaritineWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -218,7 +214,7 @@ class _MaritineWidgetState extends State<MaritineWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -256,9 +252,9 @@ class _MaritineWidgetState extends State<MaritineWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
-                              ].divide(SizedBox(width: 16.0)),
+                              ].divide(const SizedBox(width: 16.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -300,7 +296,7 @@ class _MaritineWidgetState extends State<MaritineWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -338,7 +334,7 @@ class _MaritineWidgetState extends State<MaritineWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -376,7 +372,7 @@ class _MaritineWidgetState extends State<MaritineWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -414,11 +410,11 @@ class _MaritineWidgetState extends State<MaritineWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
-                              ].divide(SizedBox(width: 16.0)),
+                              ].divide(const SizedBox(width: 16.0)),
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),

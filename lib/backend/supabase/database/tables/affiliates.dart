@@ -9,7 +9,7 @@ class AffiliatesTable extends SupabaseTable<AffiliatesRow> {
 }
 
 class AffiliatesRow extends SupabaseDataRow {
-  AffiliatesRow(Map<String, dynamic> data) : super(data);
+  AffiliatesRow(super.data);
 
   @override
   SupabaseTable get table => AffiliatesTable();

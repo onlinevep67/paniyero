@@ -1,15 +1,8 @@
-import '/flutter_flow/flutter_flow_choice_chips.dart';
-import '/flutter_flow/flutter_flow_icon_button.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'dart:ui';
 import 'create_profile_widget.dart' show CreateProfileWidget;
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
-import 'package:provider/provider.dart';
 
 class CreateProfileModel extends FlutterFlowModel<CreateProfileWidget> {
   ///  State fields for stateful widgets in this page.

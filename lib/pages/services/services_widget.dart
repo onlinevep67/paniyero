@@ -1,12 +1,8 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'services_model.dart';
 export 'services_model.dart';
 
@@ -72,7 +68,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                   useGoogleFonts: GoogleFonts.asMap().containsKey('Roboto'),
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -86,7 +82,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10.0),
                     child: Container(
@@ -96,7 +92,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 16.0, 16.0, 16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -158,7 +154,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -196,10 +192,10 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Align(
-                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Icon(
                                     Icons.medical_services,
                                     color: FlutterFlowTheme.of(context).primary,
@@ -242,7 +238,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -274,9 +270,9 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
-                              ].divide(SizedBox(width: 16.0)),
+                              ].divide(const SizedBox(width: 16.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -318,7 +314,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -356,7 +352,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Icon(
                                   Icons.receipt,
@@ -393,7 +389,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -431,18 +427,18 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
-                              ].divide(SizedBox(width: 16.0)),
+                              ].divide(const SizedBox(width: 16.0)),
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10.0),
                     child: Container(
@@ -452,7 +448,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 16.0, 16.0, 16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -514,7 +510,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -552,7 +548,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -590,7 +586,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -628,9 +624,9 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
-                              ].divide(SizedBox(width: 16.0)),
+                              ].divide(const SizedBox(width: 16.0)),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.max,
@@ -672,7 +668,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -710,7 +706,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -748,7 +744,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -786,18 +782,18 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
-                              ].divide(SizedBox(width: 16.0)),
+                              ].divide(const SizedBox(width: 16.0)),
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10.0),
                     child: Container(
@@ -807,7 +803,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                         borderRadius: BorderRadius.circular(10.0),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 16.0, 16.0, 16.0),
                         child: Column(
                           mainAxisSize: MainAxisSize.max,
@@ -869,7 +865,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -907,7 +903,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -945,7 +941,7 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
                                 Column(
                                   mainAxisSize: MainAxisSize.max,
@@ -983,11 +979,11 @@ class _ServicesWidgetState extends State<ServicesWidget> {
                                                         .bodyMediumFamily),
                                           ),
                                     ),
-                                  ].divide(SizedBox(height: 8.0)),
+                                  ].divide(const SizedBox(height: 8.0)),
                                 ),
-                              ].divide(SizedBox(width: 16.0)),
+                              ].divide(const SizedBox(width: 16.0)),
                             ),
-                          ].divide(SizedBox(height: 16.0)),
+                          ].divide(const SizedBox(height: 16.0)),
                         ),
                       ),
                     ),

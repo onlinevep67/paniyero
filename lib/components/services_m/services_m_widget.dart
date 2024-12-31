@@ -1,9 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'services_m_model.dart';
 export 'services_m_model.dart';
 
@@ -43,7 +41,7 @@ class _ServicesMWidgetState extends State<ServicesMWidget> {
         color: FlutterFlowTheme.of(context).secondaryBackground,
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -61,7 +59,7 @@ class _ServicesMWidgetState extends State<ServicesMWidget> {
             ),
             GridView(
               padding: EdgeInsets.zero,
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3,
                 crossAxisSpacing: 16.0,
                 mainAxisSpacing: 16.0,
@@ -91,7 +89,7 @@ class _ServicesMWidgetState extends State<ServicesMWidget> {
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ),
-                  ].divide(SizedBox(height: 8.0)),
+                  ].divide(const SizedBox(height: 8.0)),
                 ),
                 Column(
                   mainAxisSize: MainAxisSize.max,
@@ -114,7 +112,7 @@ class _ServicesMWidgetState extends State<ServicesMWidget> {
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ),
-                  ].divide(SizedBox(height: 8.0)),
+                  ].divide(const SizedBox(height: 8.0)),
                 ),
                 Column(
                   mainAxisSize: MainAxisSize.max,
@@ -137,7 +135,7 @@ class _ServicesMWidgetState extends State<ServicesMWidget> {
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ),
-                  ].divide(SizedBox(height: 8.0)),
+                  ].divide(const SizedBox(height: 8.0)),
                 ),
                 Column(
                   mainAxisSize: MainAxisSize.max,
@@ -160,7 +158,7 @@ class _ServicesMWidgetState extends State<ServicesMWidget> {
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ),
-                  ].divide(SizedBox(height: 8.0)),
+                  ].divide(const SizedBox(height: 8.0)),
                 ),
                 Column(
                   mainAxisSize: MainAxisSize.max,
@@ -183,7 +181,7 @@ class _ServicesMWidgetState extends State<ServicesMWidget> {
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ),
-                  ].divide(SizedBox(height: 8.0)),
+                  ].divide(const SizedBox(height: 8.0)),
                 ),
                 Column(
                   mainAxisSize: MainAxisSize.max,
@@ -206,7 +204,7 @@ class _ServicesMWidgetState extends State<ServicesMWidget> {
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ),
-                  ].divide(SizedBox(height: 8.0)),
+                  ].divide(const SizedBox(height: 8.0)),
                 ),
                 Column(
                   mainAxisSize: MainAxisSize.max,
@@ -229,7 +227,7 @@ class _ServicesMWidgetState extends State<ServicesMWidget> {
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ),
-                  ].divide(SizedBox(height: 8.0)),
+                  ].divide(const SizedBox(height: 8.0)),
                 ),
                 Column(
                   mainAxisSize: MainAxisSize.max,
@@ -252,7 +250,7 @@ class _ServicesMWidgetState extends State<ServicesMWidget> {
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ),
-                  ].divide(SizedBox(height: 8.0)),
+                  ].divide(const SizedBox(height: 8.0)),
                 ),
                 Column(
                   mainAxisSize: MainAxisSize.max,
@@ -275,7 +273,7 @@ class _ServicesMWidgetState extends State<ServicesMWidget> {
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ),
-                  ].divide(SizedBox(height: 8.0)),
+                  ].divide(const SizedBox(height: 8.0)),
                 ),
                 Column(
                   mainAxisSize: MainAxisSize.max,
@@ -298,7 +296,7 @@ class _ServicesMWidgetState extends State<ServicesMWidget> {
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ),
-                  ].divide(SizedBox(height: 8.0)),
+                  ].divide(const SizedBox(height: 8.0)),
                 ),
                 Column(
                   mainAxisSize: MainAxisSize.max,
@@ -321,7 +319,7 @@ class _ServicesMWidgetState extends State<ServicesMWidget> {
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ),
-                  ].divide(SizedBox(height: 8.0)),
+                  ].divide(const SizedBox(height: 8.0)),
                 ),
                 Column(
                   mainAxisSize: MainAxisSize.max,
@@ -344,11 +342,11 @@ class _ServicesMWidgetState extends State<ServicesMWidget> {
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
                     ),
-                  ].divide(SizedBox(height: 8.0)),
+                  ].divide(const SizedBox(height: 8.0)),
                 ),
               ],
             ),
-          ].divide(SizedBox(height: 16.0)),
+          ].divide(const SizedBox(height: 16.0)),
         ),
       ),
     );

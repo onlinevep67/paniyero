@@ -1,11 +1,8 @@
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'notifications_model.dart';
 export 'notifications_model.dart';
 
@@ -71,12 +68,12 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                   useGoogleFonts: GoogleFonts.asMap().containsKey('Roboto'),
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
         body: ListView(
-          padding: EdgeInsets.fromLTRB(
+          padding: const EdgeInsets.fromLTRB(
             0,
             4.0,
             0,
@@ -85,12 +82,12 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
           scrollDirection: Axis.vertical,
           children: [
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
               child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
                   color: FlutterFlowTheme.of(context).secondaryBackground,
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       blurRadius: 3.0,
                       color: Color(0x33000000),
@@ -107,7 +104,7 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                   ),
                 ),
                 child: Padding(
-                  padding: EdgeInsets.all(12.0),
+                  padding: const EdgeInsets.all(12.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -131,7 +128,7 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                       ),
                       Expanded(
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               12.0, 0.0, 4.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -154,7 +151,7 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                     ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 4.0, 0.0, 0.0),
                                 child: Text(
                                   'We are please to have you here in Panyero! Thank you and enjoy!',
@@ -176,7 +173,7 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 8.0, 0.0, 4.0),
                                 child: Text(
                                   '2 hours ago',
@@ -202,7 +199,7 @@ class _NotificationsWidgetState extends State<NotificationsWidget> {
                 ),
               ),
             ),
-          ].divide(SizedBox(height: 8.0)),
+          ].divide(const SizedBox(height: 8.0)),
         ),
       ),
     );

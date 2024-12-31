@@ -10,7 +10,7 @@ class AdminSettingsTable extends SupabaseTable<AdminSettingsRow> {
 }
 
 class AdminSettingsRow extends SupabaseDataRow {
-  AdminSettingsRow(Map<String, dynamic> data) : super(data);
+  AdminSettingsRow(super.data);
 
   @override
   SupabaseTable get table => AdminSettingsTable();

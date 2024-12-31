@@ -10,7 +10,7 @@ class GameTransactionsTable extends SupabaseTable<GameTransactionsRow> {
 }
 
 class GameTransactionsRow extends SupabaseDataRow {
-  GameTransactionsRow(Map<String, dynamic> data) : super(data);
+  GameTransactionsRow(super.data);
 
   @override
   SupabaseTable get table => GameTransactionsTable();

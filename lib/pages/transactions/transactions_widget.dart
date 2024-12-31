@@ -5,15 +5,10 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'transactions_model.dart';
 export 'transactions_model.dart';
 
@@ -53,8 +48,8 @@ class _TransactionsWidgetState extends State<TransactionsWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -73,8 +68,8 @@ class _TransactionsWidgetState extends State<TransactionsWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -131,14 +126,14 @@ class _TransactionsWidgetState extends State<TransactionsWidget>
                   useGoogleFonts: GoogleFonts.asMap().containsKey('Roboto'),
                 ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
         body: Container(
-          decoration: BoxDecoration(),
+          decoration: const BoxDecoration(),
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(1.0, 0.0, 0.0, 0.0),
             child: SingleChildScrollView(
               primary: false,
               child: Column(
@@ -146,7 +141,7 @@ class _TransactionsWidgetState extends State<TransactionsWidget>
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
                     child: Container(
                       width: double.infinity,
                       decoration: BoxDecoration(
@@ -158,7 +153,7 @@ class _TransactionsWidgetState extends State<TransactionsWidget>
                         ),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 12.0, 16.0, 12.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -169,7 +164,7 @@ class _TransactionsWidgetState extends State<TransactionsWidget>
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 4.0, 0.0, 0.0),
                                   child: Text(
                                     'Available Balance',
@@ -189,7 +184,7 @@ class _TransactionsWidgetState extends State<TransactionsWidget>
                                       'textOnPageLoadAnimation1']!),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 12.0, 0.0, 0.0),
                                   child: AuthUserStreamWidget(
                                     builder: (context) => Text(
@@ -213,7 +208,7 @@ class _TransactionsWidgetState extends State<TransactionsWidget>
                               ],
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 16.0, 0.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
@@ -240,7 +235,7 @@ class _TransactionsWidgetState extends State<TransactionsWidget>
                     builder: (context, snapshot) {
                       // Customize what your widget looks like when it's loading.
                       if (!snapshot.hasData) {
-                        return Center(
+                        return const Center(
                           child: SizedBox(
                             width: 50.0,
                             height: 50.0,
@@ -267,7 +262,7 @@ class _TransactionsWidgetState extends State<TransactionsWidget>
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 12.0, 16.0, 12.0),
                                 child: Material(
                                   color: Colors.transparent,
@@ -286,7 +281,7 @@ class _TransactionsWidgetState extends State<TransactionsWidget>
                                           blurRadius: 0.0,
                                           color: FlutterFlowTheme.of(context)
                                               .alternate,
-                                          offset: Offset(
+                                          offset: const Offset(
                                             0.0,
                                             1.0,
                                           ),
@@ -294,11 +289,11 @@ class _TransactionsWidgetState extends State<TransactionsWidget>
                                       ],
                                       borderRadius: BorderRadius.circular(8.0),
                                       border: Border.all(
-                                        color: Color(0x34677681),
+                                        color: const Color(0x34677681),
                                       ),
                                     ),
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 8.0, 16.0, 8.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
@@ -353,7 +348,7 @@ class _TransactionsWidgetState extends State<TransactionsWidget>
                                           ),
                                           Expanded(
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       12.0, 0.0, 0.0, 0.0),
                                               child: Column(
@@ -385,7 +380,7 @@ class _TransactionsWidgetState extends State<TransactionsWidget>
                                                   Expanded(
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   4.0,

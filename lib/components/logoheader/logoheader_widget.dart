@@ -1,12 +1,10 @@
 import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:badges/badges.dart' as badges;
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'logoheader_model.dart';
 export 'logoheader_model.dart';
 
@@ -42,15 +40,15 @@ class _LogoheaderWidgetState extends State<LogoheaderWidget> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
       child: Container(
-        decoration: BoxDecoration(),
+        decoration: const BoxDecoration(),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
-              decoration: BoxDecoration(),
+              decoration: const BoxDecoration(),
               child: InkWell(
                 splashColor: Colors.transparent,
                 focusColor: Colors.transparent,
@@ -76,7 +74,7 @@ class _LogoheaderWidgetState extends State<LogoheaderWidget> {
               mainAxisSize: MainAxisSize.max,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                   child: FaIcon(
                     FontAwesomeIcons.headphonesAlt,
                     color: FlutterFlowTheme.of(context).primaryText,
@@ -117,12 +115,12 @@ class _LogoheaderWidgetState extends State<LogoheaderWidget> {
                         badgeColor: FlutterFlowTheme.of(context).primary,
                         elevation: 4.0,
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
+                            const EdgeInsetsDirectional.fromSTEB(8.0, 8.0, 8.0, 8.0),
                         position: badges.BadgePosition.topEnd(),
                         animationType: badges.BadgeAnimationType.scale,
                         toAnimate: true,
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 18.0, 0.0),
                           child: Icon(
                             Icons.notifications_sharp,

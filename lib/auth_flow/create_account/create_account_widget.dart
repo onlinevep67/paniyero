@@ -3,12 +3,9 @@ import '/components/logo/logo_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'create_account_model.dart';
 export 'create_account_model.dart';
 
@@ -69,7 +66,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
                   ),
-                  alignment: AlignmentDirectional(0.0, -1.0),
+                  alignment: const AlignmentDirectional(0.0, -1.0),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
@@ -81,26 +78,26 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            borderRadius: BorderRadius.only(
+                            borderRadius: const BorderRadius.only(
                               bottomLeft: Radius.circular(16.0),
                               bottomRight: Radius.circular(16.0),
                               topLeft: Radius.circular(0.0),
                               topRight: Radius.circular(0.0),
                             ),
                           ),
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               Expanded(
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       20.0, 0.0, 0.0, 0.0),
                                   child: wrapWithModel(
                                     model: _model.logoModel,
                                     updateCallback: () => safeSetState(() {}),
-                                    child: LogoWidget(),
+                                    child: const LogoWidget(),
                                   ),
                                 ),
                               ),
@@ -109,7 +106,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                         ),
                         Container(
                           width: double.infinity,
-                          constraints: BoxConstraints(
+                          constraints: const BoxConstraints(
                             maxWidth: 430.0,
                           ),
                           decoration: BoxDecoration(
@@ -117,9 +114,9 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                 .secondaryBackground,
                           ),
                           child: Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: const AlignmentDirectional(0.0, 0.0),
                             child: Padding(
-                              padding: EdgeInsets.all(24.0),
+                              padding: const EdgeInsets.all(24.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -141,7 +138,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                         ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 0.0, 24.0),
                                     child: Text(
                                       'Let\'s get started by filling out the form below.',
@@ -160,16 +157,16 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 16.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: double.infinity,
                                       child: TextFormField(
                                         controller:
                                             _model.emailAddressTextController,
                                         focusNode: _model.emailAddressFocusNode,
                                         autofocus: true,
-                                        autofillHints: [AutofillHints.email],
+                                        autofillHints: const [AutofillHints.email],
                                         obscureText: false,
                                         decoration: InputDecoration(
                                           labelText: 'Email',
@@ -257,16 +254,16 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 16.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: double.infinity,
                                       child: TextFormField(
                                         controller:
                                             _model.passwordTextController,
                                         focusNode: _model.passwordFocusNode,
                                         autofocus: true,
-                                        autofillHints: [AutofillHints.password],
+                                        autofillHints: const [AutofillHints.password],
                                         obscureText: !_model.passwordVisibility,
                                         decoration: InputDecoration(
                                           labelText: 'Password',
@@ -370,9 +367,9 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 16.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: double.infinity,
                                       child: TextFormField(
                                         controller: _model
@@ -380,7 +377,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                         focusNode:
                                             _model.passwordConfirmFocusNode,
                                         autofocus: true,
-                                        autofillHints: [AutofillHints.password],
+                                        autofillHints: const [AutofillHints.password],
                                         obscureText:
                                             !_model.passwordConfirmVisibility,
                                         decoration: InputDecoration(
@@ -488,7 +485,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 16.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
@@ -499,7 +496,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                 .text) {
                                           ScaffoldMessenger.of(context)
                                               .showSnackBar(
-                                            SnackBar(
+                                            const SnackBar(
                                               content: Text(
                                                 'Passwords don\'t match!',
                                               ),
@@ -526,10 +523,10 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                       options: FFButtonOptions(
                                         width: double.infinity,
                                         height: 55.0,
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 0.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
                                         color: FlutterFlowTheme.of(context)
                                             .primary,
@@ -549,7 +546,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                           .titleSmallFamily),
                                             ),
                                         elevation: 3.0,
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Colors.transparent,
                                           width: 1.0,
                                         ),
@@ -559,19 +556,19 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 24.0),
-                                    child: Container(
+                                    child: SizedBox(
                                       width: double.infinity,
                                       child: Stack(
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0),
+                                            const AlignmentDirectional(0.0, 0.0),
                                         children: [
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 12.0, 0.0, 12.0),
                                               child: Container(
@@ -587,7 +584,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                           ),
                                           Align(
                                             alignment:
-                                                AlignmentDirectional(0.0, 0.0),
+                                                const AlignmentDirectional(0.0, 0.0),
                                             child: Container(
                                               width: 70.0,
                                               height: 32.0,
@@ -596,7 +593,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                                     FlutterFlowTheme.of(context)
                                                         .secondaryBackground,
                                               ),
-                                              alignment: AlignmentDirectional(
+                                              alignment: const AlignmentDirectional(
                                                   0.0, 0.0),
                                               child: Text(
                                                 'OR',
@@ -624,7 +621,7 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 16.0),
                                     child: FFButtonWidget(
                                       onPressed: () async {
@@ -639,17 +636,17 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                             'Homepage', context.mounted);
                                       },
                                       text: 'Continue with Google',
-                                      icon: FaIcon(
+                                      icon: const FaIcon(
                                         FontAwesomeIcons.google,
                                         size: 20.0,
                                       ),
                                       options: FFButtonOptions(
                                         width: double.infinity,
                                         height: 55.0,
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 0.0),
                                         iconPadding:
-                                            EdgeInsetsDirectional.fromSTEB(
+                                            const EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
@@ -684,20 +681,20 @@ class _CreateAccountWidgetState extends State<CreateAccountWidget> {
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(0.0, 0.0),
+                                    alignment: const AlignmentDirectional(0.0, 0.0),
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child:
                                           // You will have to add an action on this rich text to go to your login page.
                                           Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 12.0, 0.0, 12.0),
                                         child: RichText(
                                           textScaler:
                                               MediaQuery.of(context).textScaler,
                                           text: TextSpan(
                                             children: [
-                                              TextSpan(
+                                              const TextSpan(
                                                 text:
                                                     'Already have an account? ',
                                                 style: TextStyle(),

@@ -1,22 +1,15 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
-import '/backend/backend.dart';
 
-import '/backend/supabase/supabase.dart';
 
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
 import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -84,121 +77,121 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       refreshListenable: appStateNotifier,
       navigatorKey: appNavigatorKey,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? NavBarPage() : OnboardingWidget(),
+          appStateNotifier.loggedIn ? const NavBarPage() : const OnboardingWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) =>
-              appStateNotifier.loggedIn ? NavBarPage() : OnboardingWidget(),
+              appStateNotifier.loggedIn ? const NavBarPage() : const OnboardingWidget(),
         ),
         FFRoute(
           name: 'ForgotPassword',
           path: '/forgotPassword',
-          builder: (context, params) => ForgotPasswordWidget(),
+          builder: (context, params) => const ForgotPasswordWidget(),
         ),
         FFRoute(
           name: 'Transactions',
           path: '/transactions',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Transactions')
-              : TransactionsWidget(),
+              ? const NavBarPage(initialPage: 'Transactions')
+              : const TransactionsWidget(),
         ),
         FFRoute(
           name: 'Services',
           path: '/services',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Services')
-              : ServicesWidget(),
+              ? const NavBarPage(initialPage: 'Services')
+              : const ServicesWidget(),
         ),
         FFRoute(
           name: 'User',
           path: '/user',
           builder: (context, params) =>
-              params.isEmpty ? NavBarPage(initialPage: 'User') : UserWidget(),
+              params.isEmpty ? const NavBarPage(initialPage: 'User') : const UserWidget(),
         ),
         FFRoute(
           name: 'Scan',
           path: '/scan',
           builder: (context, params) =>
-              params.isEmpty ? NavBarPage(initialPage: 'Scan') : ScanWidget(),
+              params.isEmpty ? const NavBarPage(initialPage: 'Scan') : const ScanWidget(),
         ),
         FFRoute(
           name: 'Homepage',
           path: '/homepage',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'Homepage')
-              : HomepageWidget(),
+              ? const NavBarPage(initialPage: 'Homepage')
+              : const HomepageWidget(),
         ),
         FFRoute(
           name: 'Onboarding',
           path: '/onboarding',
-          builder: (context, params) => OnboardingWidget(),
+          builder: (context, params) => const OnboardingWidget(),
         ),
         FFRoute(
           name: 'CreateAccount',
           path: '/createAccount',
-          builder: (context, params) => CreateAccountWidget(),
+          builder: (context, params) => const CreateAccountWidget(),
         ),
         FFRoute(
           name: 'Login',
           path: '/login',
-          builder: (context, params) => LoginWidget(),
+          builder: (context, params) => const LoginWidget(),
         ),
         FFRoute(
           name: 'CreateProfile',
           path: '/createProfile',
-          builder: (context, params) => CreateProfileWidget(),
+          builder: (context, params) => const CreateProfileWidget(),
         ),
         FFRoute(
           name: 'Notifications',
           path: '/notifications',
-          builder: (context, params) => NotificationsWidget(),
+          builder: (context, params) => const NotificationsWidget(),
         ),
         FFRoute(
           name: 'Biometrics',
           path: '/biometrics',
-          builder: (context, params) => BiometricsWidget(),
+          builder: (context, params) => const BiometricsWidget(),
         ),
         FFRoute(
           name: 'Maritine',
           path: '/maritine',
-          builder: (context, params) => MaritineWidget(),
+          builder: (context, params) => const MaritineWidget(),
         ),
         FFRoute(
           name: 'Games',
           path: '/games',
-          builder: (context, params) => GamesWidget(),
+          builder: (context, params) => const GamesWidget(),
         ),
         FFRoute(
           name: 'Lotterry',
           path: '/lotterry',
-          builder: (context, params) => LotterryWidget(),
+          builder: (context, params) => const LotterryWidget(),
         ),
         FFRoute(
           name: 'AIPersona',
           path: '/aIPersona',
-          builder: (context, params) => AIPersonaWidget(),
+          builder: (context, params) => const AIPersonaWidget(),
         ),
         FFRoute(
           name: 'Media',
           path: '/media',
-          builder: (context, params) => MediaWidget(),
+          builder: (context, params) => const MediaWidget(),
         ),
         FFRoute(
           name: 'Utilities',
           path: '/utilities',
-          builder: (context, params) => UtilitiesWidget(),
+          builder: (context, params) => const UtilitiesWidget(),
         ),
         FFRoute(
           name: 'Finance',
           path: '/finance',
-          builder: (context, params) => FinanceWidget(),
+          builder: (context, params) => const FinanceWidget(),
         ),
         FFRoute(
           name: 'Academy',
           path: '/academy',
-          builder: (context, params) => AcademyWidget(),
+          builder: (context, params) => const AcademyWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
@@ -436,7 +429,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

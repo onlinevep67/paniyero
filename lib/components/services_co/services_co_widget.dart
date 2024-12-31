@@ -1,9 +1,7 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'services_co_model.dart';
 export 'services_co_model.dart';
 
@@ -44,7 +42,7 @@ class _ServicesCoWidgetState extends State<ServicesCoWidget> {
         borderRadius: BorderRadius.circular(10.0),
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -61,7 +59,7 @@ class _ServicesCoWidgetState extends State<ServicesCoWidget> {
                   ),
             ),
             Container(
-              decoration: BoxDecoration(),
+              decoration: const BoxDecoration(),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -96,7 +94,7 @@ class _ServicesCoWidgetState extends State<ServicesCoWidget> {
                                       .bodyMediumFamily),
                             ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                   Column(
                     mainAxisSize: MainAxisSize.max,
@@ -128,7 +126,7 @@ class _ServicesCoWidgetState extends State<ServicesCoWidget> {
                                       .bodyMediumFamily),
                             ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                   Column(
                     mainAxisSize: MainAxisSize.max,
@@ -160,7 +158,7 @@ class _ServicesCoWidgetState extends State<ServicesCoWidget> {
                                       .bodyMediumFamily),
                             ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                   Column(
                     mainAxisSize: MainAxisSize.max,
@@ -192,13 +190,13 @@ class _ServicesCoWidgetState extends State<ServicesCoWidget> {
                                       .bodyMediumFamily),
                             ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
-                ].divide(SizedBox(width: 16.0)),
+                ].divide(const SizedBox(width: 16.0)),
               ),
             ),
             Container(
-              decoration: BoxDecoration(),
+              decoration: const BoxDecoration(),
               child: Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -233,7 +231,7 @@ class _ServicesCoWidgetState extends State<ServicesCoWidget> {
                                       .bodyMediumFamily),
                             ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                   Column(
                     mainAxisSize: MainAxisSize.max,
@@ -265,7 +263,7 @@ class _ServicesCoWidgetState extends State<ServicesCoWidget> {
                                       .bodyMediumFamily),
                             ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                   Column(
                     mainAxisSize: MainAxisSize.max,
@@ -297,7 +295,7 @@ class _ServicesCoWidgetState extends State<ServicesCoWidget> {
                                       .bodyMediumFamily),
                             ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
                   Column(
                     mainAxisSize: MainAxisSize.max,
@@ -329,12 +327,12 @@ class _ServicesCoWidgetState extends State<ServicesCoWidget> {
                                       .bodyMediumFamily),
                             ),
                       ),
-                    ].divide(SizedBox(height: 8.0)),
+                    ].divide(const SizedBox(height: 8.0)),
                   ),
-                ].divide(SizedBox(width: 16.0)),
+                ].divide(const SizedBox(width: 16.0)),
               ),
             ),
-          ].divide(SizedBox(height: 16.0)),
+          ].divide(const SizedBox(height: 16.0)),
         ),
       ),
     );

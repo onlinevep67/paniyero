@@ -3,14 +3,11 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:barcode_widget/barcode_widget.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'scan_model.dart';
 export 'scan_model.dart';
 
@@ -75,9 +72,9 @@ class _ScanWidgetState extends State<ScanWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         body: Container(
-          decoration: BoxDecoration(),
+          decoration: const BoxDecoration(),
           child: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(20.0, 55.0, 20.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(20.0, 55.0, 20.0, 0.0),
             child: SingleChildScrollView(
               child: Column(
                 mainAxisSize: MainAxisSize.max,
@@ -91,7 +88,7 @@ class _ScanWidgetState extends State<ScanWidget> {
                       borderRadius: BorderRadius.circular(16.0),
                     ),
                     child: Padding(
-                      padding: EdgeInsetsDirectional.fromSTEB(
+                      padding: const EdgeInsetsDirectional.fromSTEB(
                           16.0, 16.0, 16.0, 16.0),
                       child: Column(
                         mainAxisSize: MainAxisSize.max,
@@ -100,7 +97,7 @@ class _ScanWidgetState extends State<ScanWidget> {
                           Container(
                             width: 250.0,
                             height: 250.0,
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: AuthUserStreamWidget(
                               builder: (context) => BarcodeWidget(
                                 data: currentPhoneNumber,
@@ -109,7 +106,7 @@ class _ScanWidgetState extends State<ScanWidget> {
                                 height: 200.0,
                                 color: FlutterFlowTheme.of(context).primaryText,
                                 backgroundColor: Colors.transparent,
-                                errorBuilder: (_context, _error) => SizedBox(
+                                errorBuilder: (context, error) => const SizedBox(
                                   width: 200.0,
                                   height: 200.0,
                                 ),
@@ -133,11 +130,11 @@ class _ScanWidgetState extends State<ScanWidget> {
                             mainAxisSize: MainAxisSize.max,
                             children: [
                               Container(
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 20.0),
-                                  child: Container(
+                                  child: SizedBox(
                                     width: 300.0,
                                     child: TextFormField(
                                       controller: _model.textController1,
@@ -185,7 +182,7 @@ class _ScanWidgetState extends State<ScanWidget> {
                                               BorderRadius.circular(8.0),
                                         ),
                                         focusedBorder: OutlineInputBorder(
-                                          borderSide: BorderSide(
+                                          borderSide: const BorderSide(
                                             color: Color(0x00000000),
                                             width: 1.0,
                                           ),
@@ -235,8 +232,8 @@ class _ScanWidgetState extends State<ScanWidget> {
                                 ),
                               ),
                               Container(
-                                decoration: BoxDecoration(),
-                                child: Container(
+                                decoration: const BoxDecoration(),
+                                child: SizedBox(
                                   width: 300.0,
                                   child: TextFormField(
                                     controller: _model.textController2,
@@ -280,7 +277,7 @@ class _ScanWidgetState extends State<ScanWidget> {
                                             BorderRadius.circular(8.0),
                                       ),
                                       focusedBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(
+                                        borderSide: const BorderSide(
                                           color: Color(0x00000000),
                                           width: 1.0,
                                         ),
@@ -331,9 +328,9 @@ class _ScanWidgetState extends State<ScanWidget> {
                             ],
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 20.0),
-                            child: Container(
+                            child: SizedBox(
                               width: 300.0,
                               child: TextFormField(
                                 controller: _model.textController3,
@@ -374,7 +371,7 @@ class _ScanWidgetState extends State<ScanWidget> {
                                     borderRadius: BorderRadius.circular(8.0),
                                   ),
                                   focusedBorder: OutlineInputBorder(
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0x00000000),
                                       width: 1.0,
                                     ),
@@ -416,12 +413,12 @@ class _ScanWidgetState extends State<ScanWidget> {
                               ),
                             ),
                           ),
-                        ].divide(SizedBox(height: 16.0)),
+                        ].divide(const SizedBox(height: 16.0)),
                       ),
                     ),
                   ),
                   Container(
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: FFButtonWidget(
                       onPressed: () async {
                         var transactionsRecordReference =
@@ -466,9 +463,9 @@ class _ScanWidgetState extends State<ScanWidget> {
                         width: 300.0,
                         height: 55.0,
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primary,
                         textStyle:
                             FlutterFlowTheme.of(context).titleMedium.override(
@@ -488,7 +485,7 @@ class _ScanWidgetState extends State<ScanWidget> {
                     ),
                   ),
                   Container(
-                    decoration: BoxDecoration(),
+                    decoration: const BoxDecoration(),
                     child: FFButtonWidget(
                       onPressed: () {
                         print('Button pressed ...');
@@ -498,9 +495,9 @@ class _ScanWidgetState extends State<ScanWidget> {
                         width: 300.0,
                         height: 55.0,
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                         color: FlutterFlowTheme.of(context).primaryText,
                         textStyle:
                             FlutterFlowTheme.of(context).titleMedium.override(
@@ -519,7 +516,7 @@ class _ScanWidgetState extends State<ScanWidget> {
                       ),
                     ),
                   ),
-                ].divide(SizedBox(height: 16.0)),
+                ].divide(const SizedBox(height: 16.0)),
               ),
             ),
           ),

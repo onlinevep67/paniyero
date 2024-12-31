@@ -2,13 +2,9 @@ import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'user_model.dart';
 export 'user_model.dart';
 
@@ -48,14 +44,14 @@ class _UserWidgetState extends State<UserWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         appBar: PreferredSize(
-          preferredSize: Size.fromHeight(100.0),
+          preferredSize: const Size.fromHeight(100.0),
           child: AppBar(
             backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
             automaticallyImplyLeading: false,
-            actions: [],
+            actions: const [],
             flexibleSpace: FlexibleSpaceBar(
               title: Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 14.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 14.0),
                 child: Column(
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.end,
@@ -63,7 +59,7 @@ class _UserWidgetState extends State<UserWidget> {
                   children: [
                     Padding(
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                       child: InkWell(
                         splashColor: Colors.transparent,
                         focusColor: Colors.transparent,
@@ -76,7 +72,7 @@ class _UserWidgetState extends State<UserWidget> {
                           mainAxisSize: MainAxisSize.max,
                           children: [
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: FlutterFlowIconButton(
                                 borderColor: Colors.transparent,
@@ -94,7 +90,7 @@ class _UserWidgetState extends State<UserWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   4.0, 0.0, 0.0, 0.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
@@ -146,7 +142,7 @@ class _UserWidgetState extends State<UserWidget> {
                   width: double.infinity,
                   decoration: BoxDecoration(
                     color: FlutterFlowTheme.of(context).secondaryBackground,
-                    boxShadow: [
+                    boxShadow: const [
                       BoxShadow(
                         blurRadius: 3.0,
                         color: Color(0x33000000),
@@ -158,7 +154,7 @@ class _UserWidgetState extends State<UserWidget> {
                     ],
                   ),
                   child: Padding(
-                    padding: EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       children: [
@@ -174,13 +170,13 @@ class _UserWidgetState extends State<UserWidget> {
                             ),
                           ),
                           child: Padding(
-                            padding: EdgeInsets.all(2.0),
+                            padding: const EdgeInsets.all(2.0),
                             child: AuthUserStreamWidget(
                               builder: (context) => ClipRRect(
                                 borderRadius: BorderRadius.circular(50.0),
                                 child: CachedNetworkImage(
-                                  fadeInDuration: Duration(milliseconds: 500),
-                                  fadeOutDuration: Duration(milliseconds: 500),
+                                  fadeInDuration: const Duration(milliseconds: 500),
+                                  fadeOutDuration: const Duration(milliseconds: 500),
                                   imageUrl: valueOrDefault<String>(
                                     currentUserPhoto,
                                     'https://storage.googleapis.com/flutterflow-io-6f20.appspot.com/projects/panyero-v5-1u81xf/assets/lwnsgxd3z6qq/u.png',
@@ -194,7 +190,7 @@ class _UserWidgetState extends State<UserWidget> {
                           ),
                         ),
                         Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 0.0, 0.0, 0.0),
                           child: Column(
                             mainAxisSize: MainAxisSize.max,
@@ -221,7 +217,7 @@ class _UserWidgetState extends State<UserWidget> {
                                 ),
                               ),
                               Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 4.0, 0.0, 0.0),
                                 child: AuthUserStreamWidget(
                                   builder: (context) => Text(
@@ -249,7 +245,7 @@ class _UserWidgetState extends State<UserWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                   child: Text(
                     'Account',
                     style: FlutterFlowTheme.of(context).labelLarge.override(
@@ -263,13 +259,13 @@ class _UserWidgetState extends State<UserWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: Container(
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           blurRadius: 5.0,
                           color: Color(0x3416202A),
@@ -283,7 +279,7 @@ class _UserWidgetState extends State<UserWidget> {
                       shape: BoxShape.rectangle,
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -294,7 +290,7 @@ class _UserWidgetState extends State<UserWidget> {
                           ),
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 'Subscribe',
@@ -313,7 +309,7 @@ class _UserWidgetState extends State<UserWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.9, 0.0),
+                            alignment: const AlignmentDirectional(0.9, 0.0),
                             child: Icon(
                               Icons.arrow_forward_ios,
                               color: FlutterFlowTheme.of(context).secondaryText,
@@ -327,13 +323,13 @@ class _UserWidgetState extends State<UserWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: Container(
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           blurRadius: 5.0,
                           color: Color(0x3416202A),
@@ -347,7 +343,7 @@ class _UserWidgetState extends State<UserWidget> {
                       shape: BoxShape.rectangle,
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -358,7 +354,7 @@ class _UserWidgetState extends State<UserWidget> {
                           ),
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 'Notification Settings',
@@ -377,7 +373,7 @@ class _UserWidgetState extends State<UserWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.9, 0.0),
+                            alignment: const AlignmentDirectional(0.9, 0.0),
                             child: Icon(
                               Icons.arrow_forward_ios,
                               color: FlutterFlowTheme.of(context).secondaryText,
@@ -391,13 +387,13 @@ class _UserWidgetState extends State<UserWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: Container(
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           blurRadius: 5.0,
                           color: Color(0x3416202A),
@@ -411,7 +407,7 @@ class _UserWidgetState extends State<UserWidget> {
                       shape: BoxShape.rectangle,
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -422,7 +418,7 @@ class _UserWidgetState extends State<UserWidget> {
                           ),
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 'Edit Profile',
@@ -441,7 +437,7 @@ class _UserWidgetState extends State<UserWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.9, 0.0),
+                            alignment: const AlignmentDirectional(0.9, 0.0),
                             child: Icon(
                               Icons.arrow_forward_ios,
                               color: FlutterFlowTheme.of(context).secondaryText,
@@ -454,7 +450,7 @@ class _UserWidgetState extends State<UserWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 0.0, 0.0),
                   child: Text(
                     'General',
                     style: FlutterFlowTheme.of(context).labelLarge.override(
@@ -468,13 +464,13 @@ class _UserWidgetState extends State<UserWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: Container(
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           blurRadius: 5.0,
                           color: Color(0x3416202A),
@@ -488,7 +484,7 @@ class _UserWidgetState extends State<UserWidget> {
                       shape: BoxShape.rectangle,
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -499,7 +495,7 @@ class _UserWidgetState extends State<UserWidget> {
                           ),
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 'Support',
@@ -518,7 +514,7 @@ class _UserWidgetState extends State<UserWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.9, 0.0),
+                            alignment: const AlignmentDirectional(0.9, 0.0),
                             child: Icon(
                               Icons.arrow_forward_ios,
                               color: FlutterFlowTheme.of(context).secondaryText,
@@ -532,13 +528,13 @@ class _UserWidgetState extends State<UserWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: Container(
                     width: double.infinity,
                     height: 60.0,
                     decoration: BoxDecoration(
                       color: FlutterFlowTheme.of(context).secondaryBackground,
-                      boxShadow: [
+                      boxShadow: const [
                         BoxShadow(
                           blurRadius: 5.0,
                           color: Color(0x3416202A),
@@ -552,7 +548,7 @@ class _UserWidgetState extends State<UserWidget> {
                       shape: BoxShape.rectangle,
                     ),
                     child: Padding(
-                      padding: EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(8.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -563,7 +559,7 @@ class _UserWidgetState extends State<UserWidget> {
                           ),
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
                                 'Terms of Service',
@@ -582,7 +578,7 @@ class _UserWidgetState extends State<UserWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.9, 0.0),
+                            alignment: const AlignmentDirectional(0.9, 0.0),
                             child: Icon(
                               Icons.arrow_forward_ios,
                               color: FlutterFlowTheme.of(context).secondaryText,
@@ -596,7 +592,7 @@ class _UserWidgetState extends State<UserWidget> {
                 ),
                 Padding(
                   padding:
-                      EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 16.0, 0.0),
                   child: InkWell(
                     splashColor: Colors.transparent,
                     focusColor: Colors.transparent,
@@ -614,7 +610,7 @@ class _UserWidgetState extends State<UserWidget> {
                       height: 60.0,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).warning,
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 5.0,
                             color: Color(0x3416202A),
@@ -628,7 +624,7 @@ class _UserWidgetState extends State<UserWidget> {
                         shape: BoxShape.rectangle,
                       ),
                       child: Padding(
-                        padding: EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(8.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -640,7 +636,7 @@ class _UserWidgetState extends State<UserWidget> {
                             ),
                             Expanded(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     12.0, 0.0, 0.0, 0.0),
                                 child: Text(
                                   'Logout',

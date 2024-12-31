@@ -1,11 +1,8 @@
-import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'biometrics_model.dart';
 export 'biometrics_model.dart';
 
@@ -49,7 +46,7 @@ class _BiometricsWidgetState extends State<BiometricsWidget> {
           backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
           automaticallyImplyLeading: false,
           title: Padding(
-            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
+            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
             child: Row(
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -97,7 +94,7 @@ class _BiometricsWidgetState extends State<BiometricsWidget> {
               ],
             ),
           ),
-          actions: [],
+          actions: const [],
           centerTitle: false,
           elevation: 0.0,
         ),
@@ -109,7 +106,7 @@ class _BiometricsWidgetState extends State<BiometricsWidget> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
                   child: Container(
                     width: 200.0,
                     height: 200.0,
@@ -133,7 +130,7 @@ class _BiometricsWidgetState extends State<BiometricsWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
                   child: Text(
                     'Position your face within the circle',
                     style: FlutterFlowTheme.of(context).headlineSmall.override(
@@ -147,7 +144,7 @@ class _BiometricsWidgetState extends State<BiometricsWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
                   child: Text(
                     'Make sure you are in a well-lit area and your face is clearly visible',
                     textAlign: TextAlign.center,
@@ -162,7 +159,7 @@ class _BiometricsWidgetState extends State<BiometricsWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
                   child: Row(
                     mainAxisSize: MainAxisSize.max,
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -206,11 +203,11 @@ class _BiometricsWidgetState extends State<BiometricsWidget> {
                           size: 30.0,
                         ),
                       ),
-                    ].divide(SizedBox(width: 16.0)),
+                    ].divide(const SizedBox(width: 16.0)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
                   child: Text(
                     'Tips for best results:',
                     style: FlutterFlowTheme.of(context).titleMedium.override(
@@ -224,7 +221,7 @@ class _BiometricsWidgetState extends State<BiometricsWidget> {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -250,7 +247,7 @@ class _BiometricsWidgetState extends State<BiometricsWidget> {
                                           .bodyMediumFamily),
                                 ),
                           ),
-                        ].divide(SizedBox(width: 8.0)),
+                        ].divide(const SizedBox(width: 8.0)),
                       ),
                       Row(
                         mainAxisSize: MainAxisSize.max,
@@ -273,7 +270,7 @@ class _BiometricsWidgetState extends State<BiometricsWidget> {
                                           .bodyMediumFamily),
                                 ),
                           ),
-                        ].divide(SizedBox(width: 8.0)),
+                        ].divide(const SizedBox(width: 8.0)),
                       ),
                       Row(
                         mainAxisSize: MainAxisSize.max,
@@ -296,13 +293,13 @@ class _BiometricsWidgetState extends State<BiometricsWidget> {
                                           .bodyMediumFamily),
                                 ),
                           ),
-                        ].divide(SizedBox(width: 8.0)),
+                        ].divide(const SizedBox(width: 8.0)),
                       ),
-                    ].divide(SizedBox(height: 12.0)),
+                    ].divide(const SizedBox(height: 12.0)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(32.0, 0.0, 32.0, 0.0),
                   child: FFButtonWidget(
                     onPressed: () async {
                       context.pushNamed('Homepage');
@@ -312,9 +309,9 @@ class _BiometricsWidgetState extends State<BiometricsWidget> {
                       width: double.infinity,
                       height: 55.0,
                       padding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       iconPadding:
-                          EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                          const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                       color: FlutterFlowTheme.of(context).primary,
                       textStyle: FlutterFlowTheme.of(context)
                           .titleSmall
@@ -330,7 +327,7 @@ class _BiometricsWidgetState extends State<BiometricsWidget> {
                     ),
                   ),
                 ),
-              ].divide(SizedBox(height: 24.0)),
+              ].divide(const SizedBox(height: 24.0)),
             ),
           ),
         ),

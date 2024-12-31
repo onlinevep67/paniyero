@@ -1,12 +1,10 @@
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:ui';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'onboarding_model.dart';
 export 'onboarding_model.dart';
 
@@ -53,21 +51,21 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
             mainAxisSize: MainAxisSize.max,
             children: [
               Expanded(
-                child: Container(
+                child: SizedBox(
                   width: double.infinity,
                   height: 500.0,
                   child: Stack(
                     children: [
                       Padding(
                         padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
+                            const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 30.0),
                         child: PageView(
                           controller: _model.pageViewController ??=
                               PageController(initialPage: 0),
                           scrollDirection: Axis.horizontal,
                           children: [
                             Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -75,14 +73,14 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                 children: [
                                   Expanded(
                                     child: ClipRRect(
-                                      borderRadius: BorderRadius.only(
+                                      borderRadius: const BorderRadius.only(
                                         bottomLeft: Radius.circular(0.0),
                                         bottomRight: Radius.circular(0.0),
                                         topLeft: Radius.circular(25.0),
                                         topRight: Radius.circular(25.0),
                                       ),
                                       child: Container(
-                                        decoration: BoxDecoration(
+                                        decoration: const BoxDecoration(
                                           borderRadius: BorderRadius.only(
                                             bottomLeft: Radius.circular(0.0),
                                             bottomRight: Radius.circular(0.0),
@@ -92,10 +90,10 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                         ),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 12.0),
                                           child: ClipRRect(
-                                            borderRadius: BorderRadius.only(
+                                            borderRadius: const BorderRadius.only(
                                               bottomLeft: Radius.circular(0.0),
                                               bottomRight: Radius.circular(0.0),
                                               topLeft: Radius.circular(24.0),
@@ -113,7 +111,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         12.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       'Panyero',
@@ -132,7 +130,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         12.0, 4.0, 12.0, 0.0),
                                     child: Text(
                                       'Welcome to Panyero! Your ultimate all-in-one app for payments, entertainment, and seamless transactions. Let’s get started!',
@@ -154,7 +152,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -162,12 +160,12 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                 children: [
                                   Expanded(
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 12.0),
                                         child: ClipRRect(
-                                          borderRadius: BorderRadius.only(
+                                          borderRadius: const BorderRadius.only(
                                             bottomLeft: Radius.circular(0.0),
                                             bottomRight: Radius.circular(0.0),
                                             topLeft: Radius.circular(24.0),
@@ -184,7 +182,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         12.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       'Endless Entertainment',
@@ -203,7 +201,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         12.0, 4.0, 12.0, 0.0),
                                     child: Text(
                                       'Stream the latest blockbusters, timeless classics, and trending movies. Find something new to watch every day!',
@@ -225,7 +223,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                               ),
                             ),
                             Padding(
-                              padding: EdgeInsets.all(12.0),
+                              padding: const EdgeInsets.all(12.0),
                               child: Column(
                                 mainAxisSize: MainAxisSize.max,
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -233,12 +231,12 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                 children: [
                                   Expanded(
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 0.0, 12.0),
                                         child: ClipRRect(
-                                          borderRadius: BorderRadius.only(
+                                          borderRadius: const BorderRadius.only(
                                             bottomLeft: Radius.circular(0.0),
                                             bottomRight: Radius.circular(0.0),
                                             topLeft: Radius.circular(24.0),
@@ -255,7 +253,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         12.0, 0.0, 0.0, 0.0),
                                     child: Text(
                                       'Get started',
@@ -274,7 +272,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         12.0, 4.0, 12.0, 0.0),
                                     child: Text(
                                       'Welcome to Panyero! Your ultimate all-in-one app for payments, entertainment, and seamless transactions.',
@@ -299,9 +297,9 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(0.0, 1.0),
+                        alignment: const AlignmentDirectional(0.0, 1.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               0.0, 0.0, 0.0, 10.0),
                           child: smooth_page_indicator.SmoothPageIndicator(
                             controller: _model.pageViewController ??=
@@ -311,7 +309,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                             onDotClicked: (i) async {
                               await _model.pageViewController!.animateToPage(
                                 i,
-                                duration: Duration(milliseconds: 500),
+                                duration: const Duration(milliseconds: 500),
                                 curve: Curves.ease,
                               );
                               safeSetState(() {});
@@ -335,11 +333,11 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                 ),
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 45.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 45.0),
                 child: Container(
-                  decoration: BoxDecoration(),
+                  decoration: const BoxDecoration(),
                   child: Padding(
-                    padding: EdgeInsets.all(24.0),
+                    padding: const EdgeInsets.all(24.0),
                     child: Wrap(
                       spacing: 16.0,
                       runSpacing: 16.0,
@@ -358,9 +356,9 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                           options: FFButtonOptions(
                             width: 150.0,
                             height: 50.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color:
                                 FlutterFlowTheme.of(context).primaryBackground,
@@ -377,7 +375,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                           .titleSmallFamily),
                                 ),
                             elevation: 4.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
                             ),
@@ -392,9 +390,9 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                           options: FFButtonOptions(
                             width: 150.0,
                             height: 50.0,
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
+                            iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 0.0, 0.0, 0.0),
                             color: FlutterFlowTheme.of(context).primary,
                             textStyle: FlutterFlowTheme.of(context)
@@ -410,7 +408,7 @@ class _OnboardingWidgetState extends State<OnboardingWidget> {
                                           .titleSmallFamily),
                                 ),
                             elevation: 4.0,
-                            borderSide: BorderSide(
+                            borderSide: const BorderSide(
                               color: Colors.transparent,
                               width: 1.0,
                             ),
