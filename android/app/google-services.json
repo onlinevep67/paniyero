@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "115929057422",
+    "firebase_url": "https://panyero-v5-1u81xf-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "panyero-v5-1u81xf",
+    "storage_bucket": "panyero-v5-1u81xf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:115929057422:android:571f4c9c4dd1f85053e1df",
+        "android_client_info": {
+          "package_name": "com.mypanyerowallet.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "115929057422-5qti3tj8bt917aci7nhc57t5nirnlius.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUduAa4z_mI0eDTHc9sFSy3NwlXcKlB3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108198521212169686876",
+              "client_type": 3
+            },
+            {
+              "client_id": "115929057422-02qom1a6bv3favibvub2dhmpip2u5c24.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mypanyerowallet.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
